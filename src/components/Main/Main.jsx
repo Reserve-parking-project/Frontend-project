@@ -1,9 +1,9 @@
 import Intro from "./Intro/Intro";
-import "./Main.scss";
+import style from "./Main.module.scss";
 
 export default function Main() {
   return (
-    <main className="main">
+    <main className={style.main}>
       <Intro />
     </main>
   );

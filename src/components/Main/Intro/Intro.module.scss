@@ -15,13 +15,13 @@ $colorTextInItems: #44335e;
 
 .intro {
   padding-top: 322px;
-  background: linear-gradient(
-    0deg,
-    rgba(197, 162, 255, 0.45704219187675066) 0%,
-    rgba(141, 82, 237, 0.13) 50%,
-    rgba(154, 92, 255, 0.14) 100%
-  );
+  padding-bottom: 57px;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+
   border-radius: 0 0 60px 60px;
+  z-index: 2;
+
+  position: relative;
 
   & h1 {
     font-size: 75px;
@@ -75,10 +75,23 @@ $colorTextInItems: #44335e;
   &__panel {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 21px 14px 21px;
 
     width: 100%;
 
     background-color: #fff;
     border-radius: 21px;
+
+    font-family: Kanit;
+    color: rgba(71, 56, 95, 0.9);
   }
+}
+
+.decor {
+  width: 68px;
+  height: 53px;
+  background-color: #ad7cfe;
+  border-radius: 8px;
 }

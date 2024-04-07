@@ -27,6 +27,7 @@ export default function Intro() {
               <Panel title="Arrival" date="30/03/2024" time="11:00" />
               <img src={ArrayLogo} alt="Logo arrayLogo" />
               <Panel title="Departure" date="30/03/2024" time="13:00" />
+              <div className={styles.decor}></div>
             </div>
           </div>
         </div>
