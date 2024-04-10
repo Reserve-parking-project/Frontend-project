@@ -1,18 +1,19 @@
-import DateLogo from "../../../../../assets/image/Date.svg";
-import TimeLogo from "../../../../../assets/image/Time.svg";
-
 import styles from "./Panel.module.scss";
 
-export default function PanelBlock({ title, date, time }) {
+import MapLogo from "../../../../../assets/image/MapLogo.svg";
+import ArrayLogo from "../../../../../assets/image/Frame.svg";
+
+import PanelDecor from "./PanelDecor/PanelDecor.jsx";
+
+export default function Panel() {
   return (
     <div className={styles.panel}>
-      <h6>{title}</h6>
-      <div className={styles.panel__content}>
-        <img src={DateLogo} alt="Logo date" />
-        <p>{date}</p>
-        <img src={TimeLogo} alt="Time logo" />
-        <p>{time}</p>
-      </div>
+      <p>Address, place or city</p>
+      <img src={MapLogo} alt="Logo map" />
+      <PanelDecor title="Arrival" date="30/03/2024" time="11:00" />
+      <img src={ArrayLogo} alt="Logo arrayLogo" />
+      <PanelDecor title="Departure" date="30/03/2024" time="13:00" />
+      <div className={styles.decor}></div>
     </div>
   );
 }

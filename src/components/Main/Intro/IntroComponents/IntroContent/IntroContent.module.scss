@@ -1,0 +1,37 @@
+$colorTextParagraphs: #45345e;
+$colorTextInItems: #44335e;
+
+.content {
+  margin: 0 auto;
+
+  max-width: 895px;
+  & h6 {
+    font-size: 17px;
+    font-family: Kanit;
+    font-weight: 500;
+    color: $colorTextParagraphs;
+
+    margin-bottom: 20px;
+  }
+}
+
+.items {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  & div {
+    font-family: Kanit;
+    font-family: 700;
+
+    color: $colorTextInItems;
+
+    background-color: #fff;
+    border-radius: 11px;
+    padding: 12px 15px 10px 15px;
+
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+  }
+}

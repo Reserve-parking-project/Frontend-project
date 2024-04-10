@@ -30,13 +30,13 @@
     column-gap: 20px;
 
     & a,
-    &-button {
+    &_button {
       font-family: "Kanit";
       color: #46385f;
       font-size: 17px;
     }
 
-    &-button {
+    &_button {
       border-radius: 11px;
       padding: 0 26px;
 
@@ -137,11 +137,11 @@
       }
 
       & a,
-      &-button {
+      & button {
         font-size: 28px;
       }
 
-      &-button {
+      & button {
         background: rgb(141, 82, 237);
       }
     }

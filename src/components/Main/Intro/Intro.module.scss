@@ -10,8 +10,6 @@ $colorTitleLight: linear-gradient(
   rgba(154, 92, 255, 1) 95%,
   rgba(197, 162, 255, 1) 100%
 );
-$colorTextParagraphs: #45345e;
-$colorTextInItems: #44335e;
 
 .intro {
   padding-top: 322px;
@@ -23,7 +21,7 @@ $colorTextInItems: #44335e;
 
   position: relative;
 
-  & h1 {
+  &__title {
     font-size: 75px;
     font-family: Kanit;
     font-weight: 800;
@@ -35,63 +33,6 @@ $colorTextInItems: #44335e;
 
     margin-bottom: 164px;
   }
-
-  &__content {
-    margin: 0 auto;
-
-    width: 895px;
-    max-width: 895px;
-    & h6 {
-      font-size: 17px;
-      font-family: Kanit;
-      font-weight: 500;
-      color: $colorTextParagraphs;
-
-      margin-bottom: 20px;
-    }
-  }
-
-  &__items {
-    display: flex;
-
-    margin-bottom: 20px;
-
-    & div {
-      font-family: Kanit;
-      font-family: 700;
-
-      color: $colorTextInItems;
-
-      background-color: #fff;
-      border-radius: 11px;
-      padding: 12px 15px 10px 15px;
-
-      &:not(:last-child) {
-        margin-right: 7px;
-      }
-    }
-  }
-
-  &__panel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 14px 21px 14px 21px;
-
-    width: 100%;
-
-    background-color: #fff;
-    border-radius: 21px;
-
-    font-family: Kanit;
-    color: rgba(71, 56, 95, 0.9);
-  }
 }
 
-.decor {
-  width: 68px;
-  height: 53px;
-  background-color: #ad7cfe;
-  border-radius: 8px;
-}
+@media (max-width: 767.98px) {}

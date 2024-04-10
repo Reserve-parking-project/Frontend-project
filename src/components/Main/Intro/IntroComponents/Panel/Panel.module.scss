@@ -1,20 +1,55 @@
 .panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  padding: 14px 21px 14px 21px;
 
-  & div {
-    display: flex;
-    align-items: center;
+  width: 100%;
 
-    & img {
-      margin-right: 11px;
-    }
-    & p:not(:last-child) {
-      margin-right: 22px;
+  background-color: #fff;
+  border-radius: 21px;
+
+  font-family: Kanit;
+  color: rgba(71, 56, 95, 0.9);
+}
+
+.decor {
+  width: 68px;
+  height: 53px;
+  background-color: #ad7cfe;
+  border-radius: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .panel {
+    & p {
+      max-width: 77px;
     }
   }
+}
 
-  & h6 {
-    margin-bottom: 14px;
-    color: rgba(71, 56, 95, 0.9);
+@media (max-width: 524.98px) {
+  .panel {
+    & > img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480.98px) {
+  .decor {
+    display: none;
+  }
+}
+
+@media (max-width: 389.98px) {
+  .panel {
+    display: block;
+
+    & > p {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
   }
 }

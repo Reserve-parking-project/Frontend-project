@@ -1,3 +1,4 @@
+
 import Intro from "./Intro/Intro";
 import style from "./Main.module.scss";
 

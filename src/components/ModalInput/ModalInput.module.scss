@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300..900&display=swap");
+
+$bgcForTextInputButton: #c5a2ff;
+$bgcForm: #7c3fdf;
+
+dialog {
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.479);
+}
+form {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 50px;
+
+  border-radius: 20px;
+  background-color: $bgcForm;
+
+  & h2 {
+    font-size: 42px;
+    font-family: Kanit;
+
+    margin-bottom: 10px;
+    color: $bgcForTextInputButton;
+  }
+  & p {
+    font-family: Kanit;
+    font-size: 28px;
+    color: $bgcForTextInputButton;
+
+    margin-bottom: 15px;
+  }
+}
+
+.inputData {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 70%;
+  min-width: 300px;
+  margin-bottom: 10px;
+
+  color: $bgcForTextInputButton;
+  font-family: Kanit;
+  font-size: 22px;
+
+  & input {
+    background-color: $bgcForTextInputButton;
+
+    padding: 5px 15px;
+    font-size: 20px;
+    color: $bgcForm;
+  }
+
+  &__error p {
+    color: #000;
+    font-size: 14px;
+    font-family: Kanit;
+
+    margin-top: 5px;
+  }
+}
+
+.buttons {
+  display: flex;
+  margin-top: 5px;
+
+  & button {
+    width: 100px;
+
+    font-family: Kanit;
+
+    padding: 10px 0;
+    transition: all 0.3s;
+  }
+
+  & button:first-child {
+    background-color: $bgcForTextInputButton;
+
+    color: $bgcForm;
+    margin-right: 5px;
+  }
+
+  & button:last-child:hover {
+    background-color: $bgcForTextInputButton;
+
+    color: $bgcForm;
+  }
+
+  & button:first-child:hover,
+  & button:last-child {
+    background-color: $bgcForm;
+    color: $bgcForTextInputButton;
+  }
+}
