@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300..900&display=swap");
+
+.click__button {
+  display: flex;
+  p {
+    font-family: Kanit;
+    font-weight: 500;
+    font-size: 17px;
+
+    margin-left: 8px;
+  }
+}
+
+.button__body {
+  display: flex;
+  align-items: center;
+
+  width: 29px;
+  height: 18px;
+
+  border: 1.2px solid #e6d6ff;
+  border-radius: 28px;
+
+  transition: all 0.3s;
+}
+
+.button__body.active {
+  border: 1.2px solid #b081fe;
+}
+
+.button__circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #b081fe;
+
+  margin-left: 2px;
+
+  transition: all 0.3s;
+}
+
+.button__circle.active {
+  transform: translateX(11px);
+}

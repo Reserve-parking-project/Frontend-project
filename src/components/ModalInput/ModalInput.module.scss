@@ -1,98 +1,192 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300..900&display=swap");
 
-$bgcForTextInputButton: #c5a2ff;
+$bgcForText: #47385f;
 $bgcForm: #7c3fdf;
+$borderGradient: linear-gradient(#c6a2ff9e, #9a5cff, #c5a2ff, #ae7cfeac);
 
-dialog {
+.dialog {
+  position: fixed;
+
   z-index: 1000;
   width: 100%;
   height: 100vh;
 
-  background-color: rgba(0, 0, 0, 0.479);
+  background-color: #ab78fe;
 }
-form {
-  max-width: 60%;
+.form {
+  max-width: 552px;
   margin: 0 auto;
   margin-top: 100px;
-  padding: 50px;
+  padding: 61px 116px 58px;
 
-  border-radius: 20px;
-  background-color: $bgcForm;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255);
+}
 
-  & h2 {
-    font-size: 42px;
+.tabs {
+  display: flex;
+  column-gap: 57px;
+  justify-content: center;
+
+  margin-bottom: 115px;
+
+  &__button {
+    position: relative;
+
+    color: #47385f;
     font-family: Kanit;
+    font-size: 17px;
 
-    margin-bottom: 10px;
-    color: $bgcForTextInputButton;
-  }
-  & p {
-    font-family: Kanit;
-    font-size: 28px;
-    color: $bgcForTextInputButton;
+    background-color: transparent;
 
-    margin-bottom: 15px;
+    &.active::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+
+      display: block;
+
+      background-image: linear-gradient(
+        to right,
+        #c6a2ff6e,
+        #9b5cffd3,
+        #c6a2ffae,
+        #ae7cfe72
+      );
+    }
   }
 }
 
-.inputData {
+.input {
   display: flex;
   flex-direction: column;
 
-  max-width: 70%;
+  max-width: 100%;
   min-width: 300px;
   margin-bottom: 10px;
 
-  color: $bgcForTextInputButton;
+  color: $bgcForText;
   font-family: Kanit;
-  font-size: 22px;
+  font-size: 17px;
 
   & input {
-    background-color: $bgcForTextInputButton;
+    background-color: transparent;
+    border: 1px solid #b081fe;
+    border-radius: 13px;
 
     padding: 5px 15px;
-    font-size: 20px;
-    color: $bgcForm;
+    color: $bgcForText;
+    font-size: 17px;
   }
 
-  &__error p {
-    color: #000;
-    font-size: 14px;
-    font-family: Kanit;
+  & label {
+    margin-bottom: 11px;
+  }
 
-    margin-top: 5px;
+  &__withIcon {
+    position: relative;
+    .input {
+      width: 100%;
+      &.input__active {
+        border-radius: 1px solid red;
+      }
+    }
+    & div {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+
+      width: 25px;
+    }
   }
 }
 
-.buttons {
-  display: flex;
-  margin-top: 5px;
+.button {
+  margin-top: 34px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #b081fe;
+  border-radius: 36px;
 
-  & button {
-    width: 100px;
+  font-family: Kanit;
+  color: #fff;
+  font-size: 21px;
 
-    font-family: Kanit;
+  transition: all 0.3s;
+}
 
-    padding: 10px 0;
-    transition: all 0.3s;
+.button:hover {
+  background-color: #9969e7;
+}
+
+.choice {
+  margin-top: 29px;
+  margin-bottom: 26px;
+
+  font-family: Kanit;
+  font-size: 15px;
+  text-align: center;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+
+    display: block;
+    width: 144px;
+    height: 2px;
   }
 
-  & button:first-child {
-    background-color: $bgcForTextInputButton;
+  &::before {
+    left: 0;
+    background-image: linear-gradient(to right, #c6a2ff77, #c5a2ff, #9a5cff);
+  }
+  &::after {
+    right: 0;
+    background-image: linear-gradient(to left, #c6a2ff77, #c5a2ff, #9a5cff);
+  }
+}
 
-    color: $bgcForm;
-    margin-right: 5px;
+.message__error {
+  font-family: Kanit;
+  font-size: 14px;
+  text-align: center;
+  color: red;
+}
+@media (max-width: 619.98px) {
+  .form {
+    max-width: 400px;
+    padding: 30px;
+
+    & input {
+      max-width: 100%;
+    }
+    & h2 {
+      font-size: 34px;
+    }
+
+    & p {
+      font-size: 20px;
+    }
   }
 
-  & button:last-child:hover {
-    background-color: $bgcForTextInputButton;
-
-    color: $bgcForm;
+  .input {
+    min-width: 0px;
   }
+}
 
-  & button:first-child:hover,
-  & button:last-child {
-    background-color: $bgcForm;
-    color: $bgcForTextInputButton;
+@media (max-width: 424.98px) {
+  .choice {
+    &::before,
+    &::after {
+      width: 100px;
+    }
   }
 }

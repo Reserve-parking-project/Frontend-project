@@ -1,0 +1,10 @@
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.messenger__icon,
+.google__icon,
+.facebook__icon {
+  cursor: pointer;
+}

@@ -35,4 +35,11 @@ $colorTitleLight: linear-gradient(
   }
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 424.98px) {
+  .intro {
+    padding-top: 120px;
+    &__title {
+      font-size: 50px;
+    }
+  }
+}

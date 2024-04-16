@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, memo } from "react";
 
 import "./Header.scss";
 import HeaderBurger from "./HeaderBurger";

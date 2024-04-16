@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300..900&display=swap");
+
+.text__password {
+  font-family: Kanit;
+  font-size: 17px;
+  color: #47385f;
+
+  margin-bottom: 7px;
+}
+
+.text {
+  font-family: Kanit;
+  font-size: 12px;
+  color: #aa1414;
+
+  display: flex;
+  margin-bottom: 7px;
+
+  &::before {
+    content: "";
+    display: block;
+    border: 2.5px solid #aa1414;
+    border-radius: 50%;
+
+    height: 12px;
+    width: 12px;
+
+    margin-right: 6px;
+  }
+
+  &_active {
+    font-family: Kanit;
+    font-size: 12px;
+    color: #268243;
+
+    display: flex;
+    margin-bottom: 7px;
+
+    &::before {
+      content: "";
+      display: block;
+      border: 2.5px solid #268243;
+      border-radius: 50%;
+
+      height: 12px;
+      width: 12px;
+
+      margin-right: 6px;
+    }
+  }
+}
