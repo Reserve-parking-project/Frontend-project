@@ -8,3 +8,12 @@
 .facebook__icon {
   cursor: pointer;
 }
+
+@media (max-width: 767.98px) {
+  .messenger__icon,
+  .google__icon,
+  .facebook__icon {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}

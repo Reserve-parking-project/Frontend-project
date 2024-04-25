@@ -10,46 +10,50 @@
   background-color: #fff;
   border-radius: 21px;
 
-  font-family: Kanit;
   color: rgba(71, 56, 95, 0.9);
+
+  & > div:first-child {
+    display: flex;
+  }
+
+  &__input {
+    max-width: 162px;
+
+    font-size: 17px;
+  }
 }
 
-.decor {
-  width: 68px;
-  height: 53px;
+.panel__button {
+  width: 95px;
+  height: 41px;
   background-color: #ad7cfe;
   border-radius: 8px;
+
+  font-size: 22px;
+  color: #fff;
 }
 
 @media (max-width: 767.98px) {
   .panel {
-    & p {
-      max-width: 77px;
-    }
-  }
-}
-
-@media (max-width: 524.98px) {
-  .panel {
-    & > img {
-      display: none;
-    }
-  }
-}
-
-@media (max-width: 480.98px) {
-  .decor {
-    display: none;
-  }
-}
-
-@media (max-width: 389.98px) {
-  .panel {
     display: block;
 
-    & > p {
-      max-width: 100%;
-      margin-bottom: 10px;
+    &__icon {
+      display: none;
+    }
+
+    & > div:first-child {
+      margin-bottom: 37px;
+    }
+    &__input {
+      margin-right: 80px;
+    }
+
+    &__searching {
+      text-align: center;
+    }
+    &__button {
+      text-align: center;
+      width: 208px;
     }
   }
 }

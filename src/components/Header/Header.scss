@@ -24,19 +24,16 @@
     z-index: 3;
   }
 
-  &__list {
+  &__menu-body {
     display: flex;
-    align-items: center;
-    column-gap: 20px;
-
-    & a,
-    &_button {
+    column-gap: 19px;
+    & button {
       font-family: "Kanit";
       color: #46385f;
       font-size: 17px;
     }
 
-    &_button {
+    & button {
       border-radius: 11px;
       padding: 0 26px;
 
@@ -50,6 +47,18 @@
         rgba(154, 92, 255, 0.9010197829131653) 66%,
         rgba(141, 82, 237, 1) 100%
       );
+    }
+  }
+
+  .menu-body__list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    & a {
+      font-family: "Kanit";
+      color: #46385f;
+      font-size: 17px;
     }
   }
 
@@ -123,26 +132,30 @@
       padding: 50px 0px 0px 0px;
       transition: all 0.3s;
 
+      &-body {
+        display: block;
+        padding: 50px 20px;
+
+
+        .menu-body__list {
+          display: block;
+          margin-bottom: 15px;
+
+          & li:not(:last-child) {
+            margin-bottom: 10px;
+          }
+
+          & a {
+            font-size: 28px;
+          }
+        }
+        & button {
+          font-size: 28px;
+          background: rgb(141, 82, 237);
+        }
+      }
       &.active {
         left: 0;
-      }
-    }
-
-    &__list {
-      display: block;
-      padding: 50px 20px;
-
-      & li:not(:last-child) {
-        margin-bottom: 10px;
-      }
-
-      & a,
-      & button {
-        font-size: 28px;
-      }
-
-      & button {
-        background: rgb(141, 82, 237);
       }
     }
   }

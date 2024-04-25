@@ -4,7 +4,7 @@ import "./Header.scss";
 import HeaderBurger from "./HeaderBurger";
 import HeaderNavigation from "./HeaderNavigation";
 
-export default function Header({ handleClickActive, handleClickModal }) {
+export default function Header({}) {
   const [isActive, setIsActive] = useState(false);
 
   function handleClickActive() {
@@ -24,10 +24,7 @@ export default function Header({ handleClickActive, handleClickModal }) {
             stateButton={isActive}
           />
 
-          <HeaderNavigation
-            isActive={isActive}
-            handleClickModal={handleClickModal}
-          />
+          <HeaderNavigation isActive={isActive} />
         </div>
       </div>
     </header>

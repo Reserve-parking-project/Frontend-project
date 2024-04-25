@@ -1,0 +1,25 @@
+.items {
+  background-color: rgba(255, 255, 255, 0.5);
+
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 55px;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 964px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 777.98px) {
+  .items {
+    &__body {
+      display: block;
+      max-width: 490px;
+    }
+  }
+}

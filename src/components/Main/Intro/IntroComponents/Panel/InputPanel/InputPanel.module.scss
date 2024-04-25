@@ -1,0 +1,42 @@
+.inputPanel {
+  &__content {
+    display: flex;
+    align-items: center;
+
+    & img {
+      margin-right: 11px;
+    }
+  }
+
+  & h6 {
+    margin-bottom: 14px;
+    color: rgba(71, 56, 95, 0.9);
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+
+    & input {
+      width: 18px;
+    }
+
+    & p {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .inputPanel {
+    margin-bottom: 37px;
+    &__content {
+      justify-content: space-between;
+    }
+  }
+}

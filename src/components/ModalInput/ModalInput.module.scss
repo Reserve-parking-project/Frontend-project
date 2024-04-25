@@ -6,7 +6,6 @@ $borderGradient: linear-gradient(#c6a2ff9e, #9a5cff, #c5a2ff, #ae7cfeac);
 
 .dialog {
   position: fixed;
-
   z-index: 1000;
   width: 100%;
   height: 100vh;
@@ -14,13 +13,16 @@ $borderGradient: linear-gradient(#c6a2ff9e, #9a5cff, #c5a2ff, #ae7cfeac);
   background-color: #ab78fe;
 }
 .form {
-  max-width: 552px;
-  margin: 0 auto;
-  margin-top: 100px;
   padding: 61px 116px 58px;
+  max-height: 95vh;
 
-  border-radius: 50px;
+  border-radius: 0 0 50px 50px;
   background-color: rgba(255, 255, 255);
+
+  &__body {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .tabs {
@@ -65,7 +67,7 @@ $borderGradient: linear-gradient(#c6a2ff9e, #9a5cff, #c5a2ff, #ae7cfeac);
   display: flex;
   flex-direction: column;
 
-  max-width: 100%;
+  max-width: 100%px;
   min-width: 300px;
   margin-bottom: 10px;
 
@@ -106,7 +108,7 @@ $borderGradient: linear-gradient(#c6a2ff9e, #9a5cff, #c5a2ff, #ae7cfeac);
 }
 
 .button {
-  margin-top: 34px;
+  margin-top: 150px;
   width: 100%;
   padding: 10px 0;
   background-color: #b081fe;
@@ -162,12 +164,8 @@ $borderGradient: linear-gradient(#c6a2ff9e, #9a5cff, #c5a2ff, #ae7cfeac);
 }
 @media (max-width: 619.98px) {
   .form {
-    max-width: 400px;
     padding: 30px;
 
-    & input {
-      max-width: 100%;
-    }
     & h2 {
       font-size: 34px;
     }
@@ -179,6 +177,17 @@ $borderGradient: linear-gradient(#c6a2ff9e, #9a5cff, #c5a2ff, #ae7cfeac);
 
   .input {
     min-width: 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  
+}
+
+@media (max-height: 762px) {
+  
+  .button {
+    margin-top: 50px;
   }
 }
 
