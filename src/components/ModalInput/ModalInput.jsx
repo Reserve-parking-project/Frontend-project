@@ -1,5 +1,5 @@
 import styles from "./ModalInput.module.scss";
-import { createPortal } from "react-dom";
+
 import { useState } from "react";
 import { sendingUserData } from "../../httpRequests";
 
@@ -8,15 +8,20 @@ import iconEye from "../../assets/image/IconForm/icon.svg";
 import LogInPage from "./Autorisation/LogInPage";
 import ButtonModal from "./ButtonModal";
 import CompaniesIcons from "./CompaniesIcons/CompaniesIcons";
-import Button from "../Button";
+import iconArrow from "../../assets/image/arrow.svg";
 
 // REDUX DATA
 import { useDispatch, useSelector } from "react-redux";
 import { modalActions, authActions } from "../../store/store.js";
 
+// REACT ROUTER
+import { Link, useNavigate } from "react-router-dom";
+import ArrowExit from "../ReusableComponents/ArrowExit";
+
 export default function ModalInput({}) {
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
-  const isOpen = useSelector((state) => state.modal.isOpen);
 
   const [activeFormPage, setActiveFormPage] = useState("Log in");
   const [passwordType, setPasswordType] = useState("password");
@@ -29,10 +34,6 @@ export default function ModalInput({}) {
     return letters.some((item) => regex.test(item));
   };
   const resultCheckingInput = hasSpecialCharacters(inputChecking);
-
-  const closeDialog = () => {
-    dispatch(modalActions.closeModal());
-  };
 
   const submitForm = (event) => {
     event.preventDefault();
@@ -57,7 +58,7 @@ export default function ModalInput({}) {
     // }
 
     dispatch(authActions.login());
-    dispatch(modalActions.closeModal());
+    navigate("/");
   };
 
   const changeFormPage = (textPage) => {
@@ -77,16 +78,17 @@ export default function ModalInput({}) {
     console.log(event.target.value);
   };
 
-  return createPortal(
-    <dialog className={styles.dialog} open={isOpen}>
-      <form className={styles.form} method="dialog" onSubmit={submitForm}>
-        <Button
-          className={styles.form__close}
-          onClick={closeDialog}
-          type="button"
-        >
-          <p>{"<"}</p>
-        </Button>
+  const activeBodyScroll = () => {
+    const body = document.querySelector("body");
+
+    body.classList.remove("no-scroll");
+  };
+
+  return (
+    <div className={styles.auth}>
+      <form className={styles.form} onSubmit={submitForm}>
+        
+        <ArrowExit onClick={activeBodyScroll} className={styles.form__arrow} />
 
         <div className={styles.form__body}>
           <div className={styles.tabs}>
@@ -151,18 +153,19 @@ export default function ModalInput({}) {
             <button className={styles.button} type="submit">
               Next
             </button>
-
-            <div>
-              <p className={styles.message__error}>{contentError}</p>
-            </div>
-
-            <p className={styles.choice}>Or</p>
-
-            <CompaniesIcons />
           </div>
         </div>
       </form>
-    </dialog>,
-    document.getElementById("modal")
+
+      <div className={styles.auth__links}>
+        <div>
+          <p className={styles.message__error}>{contentError}</p>
+        </div>
+
+        <p className={styles.choice}>Or</p>
+
+        <CompaniesIcons />
+      </div>
+    </div>
   );
 }

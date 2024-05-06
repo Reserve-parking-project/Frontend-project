@@ -21,16 +21,22 @@
 
     font-size: 17px;
   }
-}
 
-.panel__button {
-  width: 95px;
-  height: 41px;
-  background-color: #ad7cfe;
-  border-radius: 8px;
+  &__button {
+    width: 95px;
+    height: 41px;
+    background-color: #ad7cfe;
+    border-radius: 8px;
 
-  font-size: 22px;
-  color: #fff;
+    font-size: 22px;
+    color: #fff;
+
+    transition: all 0.3s;
+  }
+
+  &__button:hover {
+    background-color: #ae7cfed7;
+  }
 }
 
 @media (max-width: 767.98px) {

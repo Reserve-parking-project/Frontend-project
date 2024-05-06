@@ -1,16 +1,10 @@
-import Button from "../Button";
 import HeaderItem from "./HeaderItem";
 
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { modalActions } from "../../store/store";
 
 export default function HeaderNavigation({ isActive }) {
   const isAuth = useSelector((state) => state.auth.isAuth);
-  const dispatch = useDispatch();
-
-  const handleClickModal = () => {
-    dispatch(modalActions.openModal());
-  };
 
   return (
     <nav className={!isActive ? "header__menu" : "header__menu active"}>
@@ -20,9 +14,9 @@ export default function HeaderNavigation({ isActive }) {
           <HeaderItem>Contact us</HeaderItem>
         </ul>
         {!isAuth && (
-          <Button onClick={handleClickModal} className="header__list_button">
+          <Link className="header__list_link" to="authorization">
             Log in
-          </Button>
+          </Link>
         )}
       </div>
     </nav>

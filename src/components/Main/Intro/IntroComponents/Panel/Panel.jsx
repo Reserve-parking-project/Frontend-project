@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "./Panel.module.scss";
 import { useState } from "react";
 
@@ -33,9 +35,9 @@ export default function Panel() {
       />
       <InputPanel title="Departure" date="30/03/2024" time="13:00" />
       <div className={styles.panel__searching}>
-        <button type="button" className={styles.panel__button}>
+        <Link to="/search" className={styles.panel__button}>
           Search
-        </button>
+        </Link>
       </div>
     </div>
   );

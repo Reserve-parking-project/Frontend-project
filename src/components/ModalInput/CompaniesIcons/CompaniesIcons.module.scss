@@ -6,6 +6,10 @@
 .messenger__icon,
 .google__icon,
 .facebook__icon {
+  & img {
+    width: 27px;
+    height: 27px;
+  }
   cursor: pointer;
 }
 
@@ -13,7 +17,14 @@
   .messenger__icon,
   .google__icon,
   .facebook__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: #fff;
     border-radius: 50%;
+
+    width: 45px;
+    height: 45px;
   }
 }
