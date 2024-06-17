@@ -1,6 +1,6 @@
 # Reserve Parking Client
 
-## Project structure
+## Структура проекту
 ``` 
 client/
 │
