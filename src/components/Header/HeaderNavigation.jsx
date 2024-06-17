@@ -1,10 +1,14 @@
 import HeaderItem from "./HeaderItem";
 
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 export default function HeaderNavigation({ isActive }) {
   const isAuth = useSelector((state) => state.auth.isAuth);
+
+  const activeBodyScroll = () => {
+    document.body.classList.remove("no-scroll");
+  };
 
   return (
     <nav className={!isActive ? "header__menu" : "header__menu active"}>
@@ -14,7 +18,11 @@ export default function HeaderNavigation({ isActive }) {
           <HeaderItem>Contact us</HeaderItem>
         </ul>
         {!isAuth && (
-          <Link className="header__list_link" to="authorization">
+          <Link
+            onClick={activeBodyScroll}
+            className="header__list_link"
+            to="authorization"
+          >
             Log in
           </Link>
         )}

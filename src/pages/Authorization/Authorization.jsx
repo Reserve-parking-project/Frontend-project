@@ -1,24 +1,28 @@
-import styles from "./ModalInput.module.scss";
-
 import { useState } from "react";
 import { sendingUserData } from "../../httpRequests";
-
-import SignUpPage from "./Autorisation/SignUpPage.jsx";
-import iconEye from "../../assets/image/IconForm/icon.svg";
-import LogInPage from "./Autorisation/LogInPage";
-import ButtonModal from "./ButtonModal";
-import CompaniesIcons from "./CompaniesIcons/CompaniesIcons";
-import iconArrow from "../../assets/image/arrow.svg";
 
 // REDUX DATA
 import { useDispatch, useSelector } from "react-redux";
 import { modalActions, authActions } from "../../store/store.js";
 
+import styles from "./authorization.module.scss";
+
+import SignUpPage from "./Autorisation/SignUpPage.jsx";
+import LogInPage from "./Autorisation/LogInPage";
+import ButtonModal from "./ButtonModal";
+import CompaniesIcons from "./CompaniesIcons/CompaniesIcons";
+
+import iconEye from "../../assets/image/IconForm/icon.svg";
+import iconCar from "../../assets/image/IconDecor/Car.svg";
+import iconDarkCar from "../../assets/image/IconDecor/DarkCar.svg";
+import rightCar from "../../assets/image/IconDecor/RightCar.svg";
+
 // REACT ROUTER
 import { Link, useNavigate } from "react-router-dom";
-import ArrowExit from "../ReusableComponents/ArrowExit";
+import { ArrowExit } from "../../components/UI/index";
+import { ParkingDecor } from "../../components/UI/index";
 
-export default function ModalInput({}) {
+export default function ModalInput() {
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
@@ -78,17 +82,10 @@ export default function ModalInput({}) {
     console.log(event.target.value);
   };
 
-  const activeBodyScroll = () => {
-    const body = document.querySelector("body");
-
-    body.classList.remove("no-scroll");
-  };
-
   return (
     <div className={styles.auth}>
       <form className={styles.form} onSubmit={submitForm}>
-        
-        <ArrowExit onClick={activeBodyScroll} className={styles.form__arrow} />
+        <ArrowExit className={styles.form__arrow} />
 
         <div className={styles.form__body}>
           <div className={styles.tabs}>
@@ -166,6 +163,21 @@ export default function ModalInput({}) {
 
         <CompaniesIcons />
       </div>
+
+      {activeFormPage === "Sign up" ? (
+        <img src={iconDarkCar} className={styles.auth__parking_signup} />
+      ) : (
+        <div></div>
+      )}
+      <ParkingDecor
+        urlCar={iconCar}
+        className={
+          activeFormPage !== "Sign up"
+            ? styles.auth__parking_left
+            : `${styles.auth__parking_left} + ${styles.signup}`
+        }
+      />
+      <ParkingDecor urlCar={rightCar} className={styles.auth__parking_right} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import styles from "./SearchingBooking.module.scss";
+import styles from "./searchParking.module.scss";
 
 import icon from "../../assets/image/SearchingPage/icon-language.svg";
 

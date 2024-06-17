@@ -1,6 +1,7 @@
-import { useState, memo, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-import "./Header.scss";
+import "./header.scss";
+
 import HeaderBurger from "./HeaderBurger";
 import HeaderNavigation from "./HeaderNavigation";
 

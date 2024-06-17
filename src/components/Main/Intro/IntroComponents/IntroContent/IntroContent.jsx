@@ -1,6 +1,6 @@
 import styles from "./IntroContent.module.scss";
 
-import IntroItem from "../IntroItem.jsx";
+import IntroItem from "../../IntroItem.jsx";
 import Panel from "../Panel/Panel";
 
 export default function IntroContent() {

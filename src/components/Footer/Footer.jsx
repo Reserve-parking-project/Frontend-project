@@ -1,12 +1,11 @@
-import classes from "./Footer.module.scss";
+import classes from "./footer.module.scss";
 import InfoContent from "./InfoContent";
 
-import { memo } from "react";
 import instagramIcon from "../../assets/image/Footer/instagram.svg";
 import googleIcon from "../../assets/image/Footer/google.svg";
 import twitterIcon from "../../assets/image/Footer/twitter.svg";
 
-const Footer = memo(() => {
+const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.footer__container}>
@@ -91,5 +90,5 @@ const Footer = memo(() => {
       </div>
     </footer>
   );
-});
+};
 export default Footer;

@@ -1,7 +1,7 @@
 import BlockWithMap from "./BlockWithMap/BlockWithMap";
 import Intro from "./Intro/Intro";
 import ItemsInfo from "./ItemsInfo/ItemsInfo";
-import style from "./Main.module.scss";
+import classes from "./main.module.scss";
 
 import { getData } from "../../httpRequests";
 import { useEffect, useState } from "react";
@@ -14,7 +14,7 @@ export default function Main() {
   // }, []);
 
   return (
-    <main className={style.main}>
+    <main className={classes.main}>
       <Intro />
       <ItemsInfo />
       <BlockWithMap />
