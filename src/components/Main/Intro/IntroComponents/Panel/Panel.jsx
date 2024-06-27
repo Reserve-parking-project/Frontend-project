@@ -36,7 +36,7 @@ export default function Panel() {
       <InputPanel title="Departure" date="30/03/2024" time="13:00" />
       <div className={styles.panel__searching}>
         <Link to="/search" className={styles.panel__button}>
-          Search
+        Searc
         </Link>
       </div>
     </div>

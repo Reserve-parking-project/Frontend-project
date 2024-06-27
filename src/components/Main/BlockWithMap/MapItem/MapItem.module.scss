@@ -1,5 +1,3 @@
-$colorText: #47385f;
-
 .item {
   display: flex;
   flex-direction: column;
@@ -16,7 +14,7 @@ $colorText: #47385f;
   &__title {
     font-size: 25px;
     font-weight: 800;
-    color: $colorText;
+    color: var(--main-text-color);
 
     margin-bottom: 63px;
   }
@@ -25,15 +23,15 @@ $colorText: #47385f;
     margin-bottom: 47px;
 
     font-size: 19px;
-    color: $colorText;
+    color: var(--main-text-color);
   }
 
   & button {
-    background-color: #ad7cfe;
+    background-color: var(--btn-bg-color);
+
     border-radius: 30px;
 
     width: 213.84px;
-
 
     font-size: 20px;
     color: #fff;
@@ -42,7 +40,7 @@ $colorText: #47385f;
     transition: all 0.3s;
 
     &:hover {
-      background-color: #966bdc;
+      background-color: var(--hover-bg-color);
     }
   }
 }

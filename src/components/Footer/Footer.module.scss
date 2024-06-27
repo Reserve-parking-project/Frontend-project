@@ -1,7 +1,7 @@
 $colorText: #fff;
 
 .footer {
-  background-color: #47385f;
+  background-color: var(--main-text-color);
   padding-top: 44px;
   &__container {
     max-width: 842px;
@@ -24,6 +24,14 @@ $colorText: #fff;
       font-size: 17px;
       color: $colorText;
       font-weight: 300;
+
+      @media (any-hover: hover) {
+        &:hover {
+          & p {
+            text-decoration: underline;
+          }
+        }
+      }
     }
 
     li {

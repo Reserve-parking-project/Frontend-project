@@ -1,7 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300..900&display=swap");
 
 :root {
-   
+  // background-color
+  --main-bg-color: #be98fd;
+  --scroll-bg-color: #f9f7ff;
+
+  //  color
+  --main-text-color: #47375f;
+  --secondary-text-color: #8d52ed;
+
+  // button color
+  --btn-bg-color: #b081fe;
+
+  // hover color
+  --hover-bg-color: #966bdc;
+
+  // footer color
+  --footer-bg-color: #47385F;
+
+  // icon's color
+  --icon-bg-color: #C5A2FF;
 
   // fonts
   --kanit-font: "Kanit", sans-serif;

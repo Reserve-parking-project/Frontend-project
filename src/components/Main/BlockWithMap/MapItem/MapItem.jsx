@@ -1,9 +1,9 @@
-import styles from "./MapItem.module.scss";
+import classes from "./mapItem.module.scss";
 
 export default function MapItem({ title, text, buttonText }) {
   return (
-    <div className={styles.item}>
-      <h6 className={styles.item__title}>{title}</h6>
+    <div className={classes.item}>
+      <h6 className={classes.item__title}>{title}</h6>
       <p>{text}</p>
       <button>{buttonText}</button>
     </div>
