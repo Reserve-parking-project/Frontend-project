@@ -6,7 +6,11 @@ body {
   font-weight: 500;
 }
 
-[class*="__container"] {
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
   max-width: 1166px;
   margin: 0 auto;
   padding: 0 15px;

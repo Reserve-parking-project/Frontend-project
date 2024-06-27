@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-import "./header.scss";
+import classes from "./header.module.scss";
 
 import HeaderBurger from "./HeaderBurger";
 import HeaderNavigation from "./HeaderNavigation";
 
-export default function Header({}) {
+export default function Header() {
   const [isActive, setIsActive] = useState(false);
 
   // SCROLL
@@ -41,12 +41,16 @@ export default function Header({}) {
   return (
     <header
       className={
-        !isActive ? (scrolled ? "header scroll" : "header") : "header active"
+        !isActive
+          ? scrolled
+            ? `${classes.header} ${classes.scroll}`
+            : `${classes.header}`
+          : `${classes.header} ${classes.active}`
       }
     >
-      <div className="header__container">
-        <div className="header__body">
-          <a href="#" className="header__logo">
+      <div className="container">
+        <div className={classes.header__body}>
+          <a href="#" className={classes.header__logo}>
             {/* <img src="#" alt="Header logo" /> */}
           </a>
 

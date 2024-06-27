@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className={classes.footer}>
       <div className={classes.footer__container}>
         <div className={classes.footer__body}>
-          <InfoContent>
+          <InfoContent className={classes.footer__content}>
             <h6>See Us</h6>
             <ul>
               <li>
@@ -31,17 +31,23 @@ const Footer = () => {
             </ul>
           </InfoContent>
 
-          <InfoContent>
+          <InfoContent className={classes.footer__content}>
             <h6>Sell Parking</h6>
             <ul>
               <li>
-                <a href="#">Operators</a>
+                <a href="#">
+                  <p>Operators</p>
+                </a>
               </li>
               <li>
-                <a href="#">Monthly Parking</a>
+                <a href="#">
+                  <p>Monthly Parking</p>
+                </a>
               </li>
               <li>
-                <a href="#">Airport Parking</a>
+                <a href="#">
+                  <p>Airport Parking</p>
+                </a>
               </li>
             </ul>
           </InfoContent>
@@ -49,40 +55,56 @@ const Footer = () => {
           <InfoContent className={classes.footer__retreat}>
             <ul>
               <li>
-                <a href="#">Rent My Parking Space</a>
+                <a href="#">
+                  <p>Rent My Parking Space</p>
+                </a>
               </li>
               <li>
-                <a href="#">Property Managers</a>
+                <a href="#">
+                  <p>Property Managers</p>
+                </a>
               </li>
               <li>
-                <a href="#">Rent My Parking Space</a>
+                <a href="#">
+                  <p>Rent My Parking Space</p>
+                </a>
               </li>
             </ul>
           </InfoContent>
 
-          <InfoContent>
+          <InfoContent className={classes.footer__content}>
             <h6>Company/Legal</h6>
             <ul>
               <li>
-                <a href="#">About Us</a>
+                <a href="#">
+                  <p>About Us</p>
+                </a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="#">
+                  <p>Blog</p>
+                </a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#">
+                  <p>Privacy Policy</p>
+                </a>
               </li>
             </ul>
           </InfoContent>
 
-          <InfoContent>
+          <InfoContent className={classes.footer__content}>
             <h6>Book Parking</h6>
             <ul>
               <li>
-                <a href="#">All Locations</a>
+                <a href="#">
+                  <p>All Locations</p>
+                </a>
               </li>
               <li>
-                <a href="#">Touchless Parking</a>
+                <a href="#">
+                  <p>Touchless Parking</p>
+                </a>
               </li>
             </ul>
           </InfoContent>
