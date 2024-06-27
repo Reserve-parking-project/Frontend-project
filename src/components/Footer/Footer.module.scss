@@ -1,7 +1,7 @@
 $colorText: #fff;
 
 .footer {
-  background-color: #47385f;
+  background-color: var(--main-text-color);
   padding-top: 44px;
   &__container {
     max-width: 842px;
