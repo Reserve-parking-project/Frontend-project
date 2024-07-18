@@ -1,5 +1,6 @@
-import styles from "./Intro.module.scss";
 import IntroContent from "./IntroComponents/IntroContent/IntroContent.jsx";
+
+import styles from "./intro.module.scss";
 
 export default function Intro() {
   return (

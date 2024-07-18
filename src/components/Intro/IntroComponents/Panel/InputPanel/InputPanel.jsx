@@ -1,7 +1,7 @@
-import DateLogo from "../../../../../../assets/image/Date.svg";
-import TimeLogo from "../../../../../../assets/image/Time.svg";
+import DateLogo from "../../../../../assets/image/Date.svg";
+import TimeLogo from "../../../../../assets/image/Time.svg";
 
-import styles from "./InputPanel.module.scss";
+import styles from "./inputPanel.module.scss";
 
 export default function InputPanel({ title, date, time }) {
   return (

@@ -1,5 +1,3 @@
-$colorText: #fff;
-
 .footer {
   background-color: var(--main-text-color);
   padding-top: 44px;
@@ -15,14 +13,14 @@ $colorText: #fff;
 
     h6 {
       font-size: 17px;
-      color: $colorText;
+      color: #fff;
 
       margin-bottom: 28px;
     }
 
     a {
       font-size: 17px;
-      color: $colorText;
+      color: #fff;
       font-weight: 300;
 
       @media (any-hover: hover) {
@@ -59,4 +57,3 @@ $colorText: #fff;
     }
   }
 }
-

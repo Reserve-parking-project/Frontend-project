@@ -1,4 +1,4 @@
-import styles from "./BlockWithMap.module.scss";
+import styles from "./blockWithMap.module.scss";
 import MapItem from "./MapItem/MapItem";
 
 export default function BlockWithMap() {

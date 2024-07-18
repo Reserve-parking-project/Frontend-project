@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-import classes from "./header.module.scss";
-
 import HeaderBurger from "./HeaderBurger";
 import HeaderNavigation from "./HeaderNavigation";
+
+import classes from "./header.module.scss";
 
 export default function Header() {
   const [isActive, setIsActive] = useState(false);

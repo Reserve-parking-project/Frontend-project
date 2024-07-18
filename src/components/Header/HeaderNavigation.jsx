@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import classes from "./header.module.scss";
-
 import HeaderItem from "./HeaderItem";
+
+import classes from "./header.module.scss";
 
 export default function HeaderNavigation({ isActive }) {
   const isAuth = useSelector((state) => state.auth.isAuth);

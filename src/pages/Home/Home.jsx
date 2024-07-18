@@ -1,13 +1,11 @@
-import HeaderComponent from "../../components/Header/Header";
-import MainComponent from "../../components/Main/Main";
-import FooterComponent from "../../components/Footer/Footer";
+import { Header, Footer, Main } from "../../components";
 
 const Home = () => {
   return (
     <>
-      <HeaderComponent />
-      <MainComponent />
-      <FooterComponent />
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 };

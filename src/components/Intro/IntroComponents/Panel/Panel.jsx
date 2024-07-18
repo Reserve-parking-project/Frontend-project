@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-
-import styles from "./Panel.module.scss";
 import { useState } from "react";
 
-import MapLogo from "../../../../../assets/image/MapLogo.svg";
-import ArrayLogo from "../../../../../assets/image/Frame.svg";
-
 import InputPanel from "./InputPanel/InputPanel.jsx";
+
+import MapLogo from "../../../../assets/image/MapLogo.svg";
+import ArrayLogo from "../../../../assets/image/Frame.svg";
+
+import styles from "./panel.module.scss";
 
 export default function Panel() {
   const [inputValue, setInputValue] = useState("");
@@ -36,7 +36,7 @@ export default function Panel() {
       <InputPanel title="Departure" date="30/03/2024" time="13:00" />
       <div className={styles.panel__searching}>
         <Link to="/search" className={styles.panel__button}>
-        Searc
+          Search
         </Link>
       </div>
     </div>
