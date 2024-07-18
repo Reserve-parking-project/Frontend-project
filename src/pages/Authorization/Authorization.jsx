@@ -3,7 +3,7 @@ import { sendingUserData } from "../../httpRequests";
 
 // REDUX DATA
 import { useDispatch, useSelector } from "react-redux";
-import { modalActions, authActions } from "../../store/store.js";
+import { login } from "../../store/authSlice";
 
 import styles from "./authorization.module.scss";
 
@@ -61,7 +61,7 @@ export default function ModalInput() {
     //   return;
     // }
 
-    dispatch(authActions.login());
+    dispatch(login());
     navigate("/");
   };
 
