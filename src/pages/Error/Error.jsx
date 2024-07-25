@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-
-import classes from "./errorPage.module.scss";
-
 import errorIcon from "../../assets/image/ErrorPage/error icon.svg";
-import ArrowExit from "../../components/UI/ArrowExit";
+import { ArrowExit } from "../../components/UI";
+
+import s from "./errorPage.module.scss";
 
 const ErrorPage = () => {
   console.log(window.location.href);
@@ -11,7 +9,7 @@ const ErrorPage = () => {
   // document.body.style.backgroundColor = "transparent";
 
   return (
-    <div className={classes.error}>
+    <div className={s.error}>
       <ArrowExit />
 
       <h1>Oops, something went wrong</h1>

@@ -1,13 +1,11 @@
-import classes from "./header.module.scss";
+import s from "./header.module.scss";
 
 export default function HeaderBurger({ handleClickActive, stateButton }) {
   return (
     <div
       onClick={handleClickActive}
       className={
-        !stateButton
-          ? `${classes.header__burger}`
-          : `${classes.header__burger} ${classes.active}`
+        !stateButton ? `${s.header__burger}` : `${s.header__burger} ${s.active}`
       }
     >
       <span></span>

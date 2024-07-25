@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 import HeaderItem from "./HeaderItem";
 
-import classes from "./header.module.scss";
+import s from "./header.module.scss";
 
 export default function HeaderNavigation({ isActive }) {
   const isAuth = useSelector((state) => state.auth.isAuth);
@@ -15,21 +15,20 @@ export default function HeaderNavigation({ isActive }) {
   return (
     <nav
       className={
-        !isActive
-          ? `${classes.header__menu}`
-          : `${classes.header__menu} ${classes.active}`
+        !isActive ? `${s.header__menu}` : `${s.header__menu} ${s.active}`
       }
     >
-      <div className={classes["header__menu-body"]}>
-        <ul className={classes["menu-body__list"]}>
-          <HeaderItem>How does it work?</HeaderItem>
-          <HeaderItem>Contact us</HeaderItem>
+      <div className={s["header__menu-body"]}>
+        <ul>
+          <HeaderItem path="/how-work">How does it work?</HeaderItem>
+          <HeaderItem path="/contact-us">Contact us</HeaderItem>
         </ul>
+
         {!isAuth && (
           <Link
             onClick={activeBodyScroll}
-            className={classes["header__list_link"]}
-            to="authorization"
+            className={s["header__list-link"]}
+            to="authentication?mode=login"
           >
             Log in
           </Link>

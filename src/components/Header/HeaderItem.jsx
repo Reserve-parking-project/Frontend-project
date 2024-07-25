@@ -1,9 +1,9 @@
-export default function HeaderItem({ children }) {
+import { Link } from "react-router-dom";
+
+export default function HeaderItem({ children, path }) {
   return (
-    <li className="header__item">
-      <a href="#" className="header__item">
-        {children}
-      </a>
+    <li>
+      <Link to={path}>{children}</Link>
     </li>
   );
 }

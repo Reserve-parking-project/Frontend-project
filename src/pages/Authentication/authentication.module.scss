@@ -39,7 +39,7 @@ body {
     &_left {
       position: absolute;
       bottom: 0;
-      left: 127px;
+      left: 240px;
 
       &.signup {
         left: 230px;
@@ -71,38 +71,6 @@ body {
     }
   }
 }
-.form {
-  position: relative;
-
-  padding: 10px 116px 58px;
-  max-height: 95vh;
-
-  border-radius: 0 0 50px 50px;
-  background-color: transparent;
-
-  &__body {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  &__arrow {
-    position: relative;
-    top: 40px;
-
-    display: block;
-    width: 41px;
-    height: 41px;
-
-    background-color: #fff;
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: all 0.3s;
-  }
-}
 
 @media (max-width: 1066.98px) {
   .auth {
@@ -130,116 +98,6 @@ body {
       }
     }
   }
-}
-
-@media (min-width: 767px) {
-  .form {
-    &__arrow {
-      &:hover {
-        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
-      }
-    }
-  }
-}
-
-.tabs {
-  display: flex;
-  column-gap: 57px;
-  justify-content: center;
-
-  margin-bottom: 115px;
-
-  &__button {
-    position: relative;
-
-    color: #47385f;
-    font-family: Kanit;
-    font-size: 17px;
-
-    background-color: transparent;
-
-    &.active::after {
-      content: "";
-      width: 100%;
-      height: 3px;
-
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-
-      display: block;
-
-      background-image: linear-gradient(
-        to right,
-        #c6a2ff6e,
-        #9b5cffd3,
-        #c6a2ffae,
-        #ae7cfe72
-      );
-    }
-  }
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-
-  max-width: 100%px;
-  min-width: 300px;
-  margin-bottom: 10px;
-
-  color: $bgcForText;
-  font-family: Kanit;
-  font-size: 17px;
-
-  & input {
-    background-color: transparent;
-    border: 1px solid #b081fe;
-    border-radius: 13px;
-
-    padding: 5px 15px;
-    color: $bgcForText;
-    font-size: 17px;
-  }
-
-  & label {
-    margin-bottom: 11px;
-  }
-
-  &__withIcon {
-    position: relative;
-    .input {
-      width: 100%;
-      &.input__active {
-        border-radius: 1px solid red;
-      }
-    }
-    & div {
-      position: absolute;
-      top: 6px;
-      right: 10px;
-
-      width: 25px;
-    }
-  }
-}
-
-.button {
-  margin-top: 32px;
-  width: 100%;
-  padding: 10px 0;
-  background-color: #b081fe;
-  border-radius: 36px;
-
-  font-family: Kanit;
-  color: #fff;
-  font-size: 21px;
-
-  transition: all 0.3s;
-}
-
-.button:hover {
-  background-color: #9969e7;
 }
 
 .choice {
@@ -291,26 +149,6 @@ body {
   }
   .button {
     margin-top: 100px;
-  }
-}
-
-@media (max-width: 619.98px) {
-  .form {
-    padding: 30px;
-
-    & h2 {
-      font-size: 34px;
-    }
-  }
-
-  .input {
-    min-width: 0px;
-  }
-}
-
-@media (max-width: 500.98px) {
-  .tabs {
-    margin-bottom: 53px;
   }
 }
 

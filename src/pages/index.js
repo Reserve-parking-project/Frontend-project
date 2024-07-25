@@ -1,6 +1,6 @@
 import Home from "./Home/Home";
 import Error from "./Error/Error";
 import SearchParking from "./SearchParking/SearchParking";
-import Authorization from "./Authorization/Authorization";
+import Authentication from "./Authentication/Authentication";
 
-export { Home, Error, SearchParking, Authorization };
+export { Home, Error, SearchParking, Authentication };

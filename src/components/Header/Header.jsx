@@ -3,23 +3,20 @@ import { useState, useEffect } from "react";
 import HeaderBurger from "./HeaderBurger";
 import HeaderNavigation from "./HeaderNavigation";
 
-import classes from "./header.module.scss";
+import s from "./header.module.scss";
 
 export default function Header() {
-  const [isActive, setIsActive] = useState(false);
-
-  // SCROLL
+  const [isActiveBurgerMenu, setIsActiveBurgerMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   function handleClickActive() {
-    setIsActive((prevState) => !prevState);
+    setIsActiveBurgerMenu((prevState) => !prevState);
+    console.log("Hello i'm React JS");
 
-    const body = document.querySelector("body");
-
-    if (!isActive) {
-      body.classList.add("no-scroll");
+    if (!isActiveBurgerMenu) {
+      document.body.classList.add("no-scroll");
     } else {
-      body.classList.remove("no-scroll");
+      document.body.classList.remove("no-scroll");
     }
   }
 
@@ -41,25 +38,25 @@ export default function Header() {
   return (
     <header
       className={
-        !isActive
+        !isActiveBurgerMenu
           ? scrolled
-            ? `${classes.header} ${classes.scroll}`
-            : `${classes.header}`
-          : `${classes.header} ${classes.active}`
+            ? `${s.header} ${s.scroll}`
+            : `${s.header}`
+          : `${s.header} ${s.active}`
       }
     >
       <div className="container">
-        <div className={classes.header__body}>
-          <a href="#" className={classes.header__logo}>
+        <div className={s.header__body}>
+          <a href="#" className={s.header__logo}>
             {/* <img src="#" alt="Header logo" /> */}
           </a>
 
           <HeaderBurger
             handleClickActive={handleClickActive}
-            stateButton={isActive}
+            stateButton={isActiveBurgerMenu}
           />
 
-          <HeaderNavigation isActive={isActive} />
+          <HeaderNavigation isActive={isActiveBurgerMenu} />
         </div>
       </div>
     </header>

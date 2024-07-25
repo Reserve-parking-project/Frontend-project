@@ -4,5 +4,6 @@ import Main from "./Main/Main";
 import ItemsInfo from "./ItemsInfo/ItemsInfo";
 import Intro from "./Intro/Intro";
 import BlockWithMap from "./BlockWithMap/BlockWithMap";
+import AuthForm from "./AuthForm/AuthForm";
 
-export { Footer, Header, Main, ItemsInfo, Intro, BlockWithMap };
+export { Footer, Header, Main, ItemsInfo, Intro, BlockWithMap, AuthForm };
