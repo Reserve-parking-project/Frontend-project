@@ -8,7 +8,7 @@
 
   padding: 39px 32px 27px;
 
-  background-color: #fff;
+  background-color: var(--block-bg-color);
   border-radius: 37px;
 
   &__title {
@@ -34,7 +34,7 @@
     width: 213.84px;
 
     font-size: 20px;
-    color: #fff;
+    color: var(--block-bg-color);
 
     padding: 15px 0;
     transition: all 0.3s;

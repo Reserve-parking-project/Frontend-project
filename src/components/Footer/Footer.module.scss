@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--main-text-color);
   padding-top: 44px;
+
   &__container {
     max-width: 842px;
     padding: 0 20px;
@@ -12,15 +13,12 @@
     grid-template-columns: repeat(5, 1fr);
 
     h6 {
-      font-size: 17px;
-      color: #fff;
-
+      color: var(--white-text-color);
       margin-bottom: 28px;
     }
 
     a {
-      font-size: 17px;
-      color: #fff;
+      color: var(--white-text-color);
       font-weight: 300;
 
       @media (any-hover: hover) {

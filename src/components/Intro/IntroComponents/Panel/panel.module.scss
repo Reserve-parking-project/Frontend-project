@@ -7,35 +7,32 @@
 
   width: 100%;
 
-  background-color: #fff;
+  background-color: var(--block-bg-color);
   border-radius: 21px;
 
-  color: rgba(71, 56, 95, 0.9);
-
-  & > div:first-child {
-    display: flex;
-  }
-
   &__input {
-    max-width: 162px;
+    display: flex;
 
-    font-size: 17px;
+    & input {
+      font-size: 17px;
+      max-width: 162px;
+    }
   }
 
   &__button {
     width: 95px;
     height: 41px;
-    background-color: #ad7cfe;
+    background-color: var(--main-btn-bg-color);
     border-radius: 8px;
 
     font-size: 22px;
-    color: #fff;
+    color: var(--white-text-color);
 
     transition: all 0.3s;
   }
 
   &__button:hover {
-    background-color: #ae7cfed7;
+    background-color: var(--hover-btn-color);
   }
 }
 
@@ -47,11 +44,12 @@
       display: none;
     }
 
-    & > div:first-child {
-      margin-bottom: 37px;
-    }
     &__input {
-      margin-right: 80px;
+      margin-bottom: 37px;
+
+      & input {
+        margin-right: 80px;
+      }
     }
 
     &__searching {

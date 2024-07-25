@@ -4,15 +4,29 @@
   // background-color
   --main-bg-color: #be98fd;
   --scroll-bg-color: #f9f7ff;
+  --block-bg-color: #fff;
+  --block-opacity-bg-color: rgba(255, 255, 255, 0.5);
 
   //  color
-  --main-text-color: #47375f;
+  --main-text-color: #47385f;
   --secondary-text-color: #8d52ed;
   --white-text-color: #f9f7ff;
+  --title-text-color: linear-gradient(
+    90deg,
+    rgba(141, 82, 237, 1) 8%,
+    rgba(197, 162, 240, 1) 16%,
+    rgba(154, 92, 255, 1) 24%,
+    rgba(141, 82, 237, 1) 54%,
+    rgba(116, 60, 207, 1) 71%,
+    rgba(154, 92, 255, 1) 95%,
+    rgba(197, 162, 255, 1) 100%
+  );
 
   // button color
+  --main-btn-bg-color: #ad7cfe;
   --btn-bg-color: #b081fe;
   --btn-bg-active-color: #a171f1;
+  --hover-btn-color: #ae7cfed7;
 
   // hover color
   --hover-bg-color: #966bdc;

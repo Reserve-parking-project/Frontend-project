@@ -10,11 +10,13 @@
 
   & h6 {
     margin-bottom: 14px;
-    color: rgba(71, 56, 95, 0.9);
+    color: var(--main-text-color);
   }
+
   &__info {
     display: flex;
     align-items: center;
+    
     margin-right: 10px;
   }
 

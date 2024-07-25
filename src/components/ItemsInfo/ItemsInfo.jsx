@@ -1,5 +1,3 @@
-import styles from "./ItemsInfo.module.scss";
-
 import ItemInfo from "./ItemInfo/ItemInfo";
 
 // AirPort item
@@ -14,11 +12,13 @@ import dandruffIcon from "../../assets/image/ItemsInfo/Icon/dandruff.svg";
 import cityImage from "../../assets/image/ItemsInfo/Picture/city.jpg";
 import businessIcon from "../../assets/image/ItemsInfo/Icon/Business.svg";
 
+import s from "./itemsInfo.module.scss";
+
 export default function ItemsInfo() {
   return (
     <>
-      <div className={styles.items}>
-        <div className={styles.items__body}>
+      <div className={s.items}>
+        <div className={s.items__body}>
           <ItemInfo
             pictureText="Airport"
             pictureUrl={airportImage}

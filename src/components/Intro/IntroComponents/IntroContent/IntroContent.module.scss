@@ -1,10 +1,9 @@
 .content {
+  max-width: 895px;
   margin: 0 auto;
 
-  max-width: 895px;
   & h6 {
-    font-size: 17px;
-    font-family: Kanit;
+    font-family: var(--kanit-font);
     font-weight: 500;
     color: var(--main-text-color);
 
@@ -22,7 +21,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #fff;
+    background-color: var(--block-bg-color);
     border-radius: 11px;
     padding: 8px 14.2px;
 

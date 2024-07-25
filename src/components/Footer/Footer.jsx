@@ -1,16 +1,17 @@
-import classes from "./footer.module.scss";
 import InfoContent from "./InfoContent";
 
 import instagramIcon from "../../assets/image/Footer/instagram.svg";
 import googleIcon from "../../assets/image/Footer/google.svg";
 import twitterIcon from "../../assets/image/Footer/twitter.svg";
 
+import s from "./footer.module.scss";
+
 const Footer = () => {
   return (
-    <footer className={classes.footer}>
-      <div className={classes.footer__container}>
-        <div className={classes.footer__body}>
-          <InfoContent className={classes.footer__content}>
+    <footer className={s.footer}>
+      <div className={s.footer__container}>
+        <div className={s.footer__body}>
+          <InfoContent className={s.footer__content}>
             <h6>See Us</h6>
             <ul>
               <li>
@@ -31,7 +32,7 @@ const Footer = () => {
             </ul>
           </InfoContent>
 
-          <InfoContent className={classes.footer__content}>
+          <InfoContent className={s.footer__content}>
             <h6>Sell Parking</h6>
             <ul>
               <li>
@@ -52,7 +53,7 @@ const Footer = () => {
             </ul>
           </InfoContent>
 
-          <InfoContent className={classes.footer__retreat}>
+          <InfoContent className={s.footer__retreat}>
             <ul>
               <li>
                 <a href="#">
@@ -72,7 +73,7 @@ const Footer = () => {
             </ul>
           </InfoContent>
 
-          <InfoContent className={classes.footer__content}>
+          <InfoContent className={s.footer__content}>
             <h6>Company/Legal</h6>
             <ul>
               <li>
@@ -93,7 +94,7 @@ const Footer = () => {
             </ul>
           </InfoContent>
 
-          <InfoContent className={classes.footer__content}>
+          <InfoContent className={s.footer__content}>
             <h6>Book Parking</h6>
             <ul>
               <li>

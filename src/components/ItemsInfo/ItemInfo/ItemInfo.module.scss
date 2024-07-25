@@ -2,24 +2,22 @@
   &__picture {
     position: relative;
     width: 244px;
-    & p {
-      font-weight: 800;
-      color: #fff;
-      font-size: 30px;
 
+    border-radius: 27px;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+    }
+
+    & p {
       position: absolute;
       bottom: 14%;
       left: 27.4%;
-    }
 
-    & div {
-      width: 100%;
-      border-radius: 27px;
-      overflow: hidden;
-
-      & img {
-        width: 100%;
-      }
+      font-weight: 800;
+      color: var(--white-text-color);
+      font-size: 30px;
     }
   }
 
@@ -33,7 +31,7 @@
     margin: 0 auto;
     margin-top: 15px;
 
-    background-color: #fff;
+    background-color: var(--white-text-color);
 
     border-radius: 22px;
     width: 214px;
@@ -46,7 +44,7 @@
     & p {
       font-size: 12px;
       font-weight: 500;
-      color: #47385f;
+      color: var(--main-text-color);
     }
   }
 }
