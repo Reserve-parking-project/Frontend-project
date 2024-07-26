@@ -1,5 +1,5 @@
 import { AuthForm } from "../../components";
-import { getMode } from "../../getFunction";
+import { getMode } from "../../functions/getMode";
 import { CompaniesIcons, ParkingDecor } from "../../components/UI";
 
 import iconCar from "../../assets/image/IconDecor/Car.svg";

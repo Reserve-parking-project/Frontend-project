@@ -1,4 +1,5 @@
 import MapItem from "./MapItem/MapItem";
+import MapComponent from "./MapComponent/MapComponent";
 
 import { blockWithMapInfo } from "../../constants";
 
@@ -6,11 +7,13 @@ import s from "./blockWithMap.module.scss";
 
 export default function BlockWithMap() {
   return (
-    <div className={s.map}>
-      <div className={s.map__body}>
-        <div className={s.map__block}></div>
+    <div className={s.mapBlock}>
+      <div className={s.mapBlock__body}>
+        <div className={s["mapBlock__block-map"]}>
+          <MapComponent />
+        </div>
 
-        <div className={s.map__items}>
+        <div className={s.mapBlock__items}>
           {blockWithMapInfo.map((item) => (
             <MapItem
               title={item.title}

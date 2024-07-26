@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import FormComponent from "../Form";
-import { resultCheckingInput } from "../../../getFunction";
+import { resultCheckingInput } from "../../../functions/getResultCheckInput";
 
 import { Confirmation } from "../../UI";
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { getMode } from "../../getFunction";
+import { getMode } from "../../functions/getMode";
 import SignUpPage from "./Pages/SignUpPage";
 import LogInPage from "./Pages/LogInPage";
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import iconEye from "../../assets/image/IconForm/icon.svg";
-import { resultCheckingInput } from "../../getFunction";
+import { resultCheckingInput } from "../../functions/getResultCheckInput";
 
 import s from "./authForm.module.scss";
 
