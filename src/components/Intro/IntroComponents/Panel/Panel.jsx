@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import InputPanel from "./InputPanel/InputPanel.jsx";
+import ActionsPanel from "./ActionsPanel/ActionsPanel.jsx";
+import { Icon } from "../../..//UI";
 
-import mapLogo from "../../../../assets/image/MapLogo.svg";
-import arrayLogo from "../../../../assets/image/Frame.svg";
-
-import styles from "./panel.module.scss";
+import s from "./panel.module.scss";
 
 export default function Panel() {
   const [inputValue, setInputValue] = useState("");
@@ -16,8 +14,8 @@ export default function Panel() {
   }
 
   return (
-    <div className={styles.panel}>
-      <div className={styles.panel__input}>
+    <div className={s.panel}>
+      <div className={s.panel__input}>
         <input
           type="text"
           placeholder="Address, place or city"
@@ -25,21 +23,17 @@ export default function Panel() {
           value={inputValue}
         />
 
-        <img src={mapLogo} alt="Mini map" />
+        <Icon name="mapLogo" className={s["panel__input-icon"]} />
       </div>
 
-      <InputPanel title="Arrival" />
+      <ActionsPanel title="Arrival" />
 
-      <img
-        className={styles.panel__icon}
-        src={arrayLogo}
-        alt="Array to right"
-      />
+      <Icon className={s.panel__icon} name="frame" />
 
-      <InputPanel title="Departure" />
+      <ActionsPanel title="Departure" />
 
-      <div className={styles.panel__searching}>
-        <Link to="/search" className={styles.panel__button}>
+      <div className={s.panel__searching}>
+        <Link to="/search" className={s.panel__button}>
           Search
         </Link>
       </div>

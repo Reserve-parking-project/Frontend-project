@@ -1,30 +1,26 @@
 .icons {
   display: flex;
   justify-content: space-around;
-}
 
-.messenger__icon,
-.google__icon,
-.facebook__icon {
-  & img {
+  & svg {
     width: 27px;
     height: 27px;
+    cursor: pointer;
   }
-  cursor: pointer;
 }
 
 @media (max-width: 767.98px) {
-  .messenger__icon,
-  .google__icon,
-  .facebook__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .icons {
+    & svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    background-color: #fff;
-    border-radius: 50%;
+      background-color: var(--block-bg-color);
+      border-radius: 50%;
 
-    width: 45px;
-    height: 45px;
+      width: 45px;
+      height: 45px;
+    }
   }
 }

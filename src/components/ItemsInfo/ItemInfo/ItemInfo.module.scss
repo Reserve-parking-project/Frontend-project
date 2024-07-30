@@ -45,7 +45,17 @@
       font-size: 12px;
       font-weight: 500;
       color: var(--main-text-color);
+      line-height: 150%;
     }
+  }
+
+  &__icon {
+    width: 75.33px;
+    height: 75.35px;
+
+    margin-bottom: 24.53px;
+
+    fill: #c5a2ff;
   }
 }
 

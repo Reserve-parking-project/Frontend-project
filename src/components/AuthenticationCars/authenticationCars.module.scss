@@ -1,0 +1,87 @@
+.cars {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 0;
+
+  &__parking {
+    display: flex;
+    align-items: end;
+
+    position: relative;
+    bottom: 0;
+    left: 127px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: end;
+
+    &.signup {
+      margin-left: 19px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: end;
+
+    position: relative;
+    right: 25px;
+    bottom: 0;
+
+    & .svg {
+      width: 146px;
+      height: 53px;
+    }
+
+    & img:first-child {
+      position: relative;
+      top: 41px;
+      left: 5px;
+    }
+  }
+
+  &__darkCar {
+    width: 99px;
+    height: 62px;
+  }
+
+  &__icon {
+    fill: var(--main-btn-bg-color);
+    width: 107px;
+    height: 62px;
+  }
+}
+
+@media (max-width: 1066.98px) {
+  .cars {
+    &__left {
+      &.signup {
+        left: 127px;
+      }
+    }
+    &__signup {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 915.98px) {
+  .cars {
+    &__left {
+      left: 40px;
+      &.signup {
+        left: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cars {
+    display: none;
+  }
+}

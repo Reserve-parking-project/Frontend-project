@@ -12,10 +12,15 @@
 
   &__input {
     display: flex;
+    column-gap: 32px;
 
     & input {
       font-size: 17px;
       max-width: 162px;
+    }
+
+    &-icon {
+      fill: var(--main-btn-bg-color);
     }
   }
 

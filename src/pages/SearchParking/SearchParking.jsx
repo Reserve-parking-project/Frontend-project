@@ -1,6 +1,6 @@
-import styles from "./searchParking.module.scss";
+import { Icon } from "../../components/UI";
 
-import icon from "../../assets/image/SearchingPage/icon-language.svg";
+import styles from "./searchParking.module.scss";
 
 const SearchingBooking = () => {
   return (
@@ -11,7 +11,7 @@ const SearchingBooking = () => {
 
           <button type="button">Log in</button>
 
-          <img src={icon} alt="Icon choice language" />
+          <Icon name="icon-language" />
         </div>
       </header>
     </>

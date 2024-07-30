@@ -1,0 +1,67 @@
+.actionsPanel {
+  &__content {
+    display: flex;
+    align-items: center;
+
+    & img {
+      margin-right: 11px;
+    }
+  }
+
+  & h6 {
+    margin-bottom: 14px;
+    color: var(--main-text-color);
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    & input {
+      width: 0;
+      height: 0;
+    }
+
+    & button {
+      background: none;
+      margin-right: 9px;
+    }
+
+    & p {
+      color: var(--main-text-color);
+      font-weight: 400;
+    }
+  }
+
+  &__date {
+    button {
+      width: 17px;
+      height: 19px;
+    }
+  }
+  &__time {
+    button {
+      width: 21px;
+      height: 23px;
+    }
+  }
+
+  &__date,
+  &__time {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .actionsPanel {
+    margin-bottom: 37px;
+    &__content {
+      justify-content: space-between;
+    }
+  }
+}

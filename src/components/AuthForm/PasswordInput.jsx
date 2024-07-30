@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import iconEye from "../../assets/image/IconForm/icon.svg";
 import { resultCheckingInput } from "../../functions/getResultCheckInput";
+import { Icon } from "../UI";
 
 import s from "./authForm.module.scss";
 
@@ -42,7 +42,7 @@ export default function PasswordInput({ inputChecking, setInputChecking }) {
 
         <div onClick={changePasswordType}>
           <i aria-hidden="true">
-            <img src={iconEye} alt="Hide and show password" />
+            <Icon name="icon" />
           </i>
         </div>
       </div>

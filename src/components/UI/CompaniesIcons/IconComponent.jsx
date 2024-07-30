@@ -1,7 +1,9 @@
-export default function IconComponent({ imageUrl, text, ...props }) {
+import { Icon } from "../index";
+
+export default function IconComponent({ imageName, ...props }) {
   return (
     <div {...props}>
-      <img src={imageUrl} alt={text} />
+      <Icon name={imageName} />
     </div>
   );
 }

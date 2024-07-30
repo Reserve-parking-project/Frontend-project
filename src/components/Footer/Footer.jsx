@@ -1,8 +1,5 @@
 import InfoContent from "./InfoContent";
-
-import instagramIcon from "../../assets/image/Footer/instagram.svg";
-import googleIcon from "../../assets/image/Footer/google.svg";
-import twitterIcon from "../../assets/image/Footer/twitter.svg";
+import { Icon } from "../UI";
 
 import s from "./footer.module.scss";
 
@@ -16,17 +13,17 @@ const Footer = () => {
             <ul>
               <li>
                 <a href="#">
-                  <img src={instagramIcon} alt="Instagram icon" />
+                  <Icon name="instagram" className={s.footer__icon} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src={googleIcon} alt="Google icon" />
+                  <Icon name="googleWhite" className={s.footer__icon} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src={twitterIcon} alt="Twitter icon" />
+                  <Icon name="twitter" className={s.footer__icon} />
                 </a>
               </li>
             </ul>

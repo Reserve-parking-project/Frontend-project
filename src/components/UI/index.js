@@ -1,9 +1,10 @@
-import ArrowExit from "./ArrowExit";
+import ArrowExit from "./ArrowExit/ArrowExit";
 import Button from "./Button";
-import ParkingDecor from "./ParkingDecor";
+import ParkingDecor from "./ParkingDecor/ParkingDecor";
 import CompaniesIcons from "./CompaniesIcons/CompaniesIcons";
 import ButtonModal from "./ButtonModal";
 import Confirmation from "./Confirmation/Confirmation";
+import Icon from "./Icon/Icon";
 
 export {
   ArrowExit,
@@ -12,4 +13,5 @@ export {
   CompaniesIcons,
   ButtonModal,
   Confirmation,
+  Icon,
 };

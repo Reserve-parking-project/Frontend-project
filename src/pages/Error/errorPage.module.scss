@@ -12,11 +12,13 @@
   position: relative;
 
   background: linear-gradient(
-    180deg,
-    rgba(197, 162, 255, 0.1) 0%,
-    rgba(141, 82, 237, 0.15) 49.05208349227905%,
-    rgba(154, 92, 255, 0.5) 100%
-  );
+      128.23deg,
+      rgba(197, 162, 255, 1) 0%,
+      rgba(154, 92, 255, 0.68) 38.89996409416199%,
+      rgba(173, 124, 254, 0.7) 78.39996218681335%,
+      rgba(197, 162, 255, 1) 100%
+    ),
+    linear-gradient(to left, #be98fd, #be98fd);
 
   & h1 {
     color: #8d52ed;

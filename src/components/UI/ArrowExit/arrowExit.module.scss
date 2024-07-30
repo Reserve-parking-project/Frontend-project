@@ -1,0 +1,12 @@
+.arrow {
+  height: 16px;
+  & svg {
+    fill: #fff;
+    width: 20px;
+    height: 12px;
+
+    &  use {
+      height: 12px;
+    }
+  }
+}

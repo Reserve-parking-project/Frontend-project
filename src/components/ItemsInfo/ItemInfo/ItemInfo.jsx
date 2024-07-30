@@ -1,17 +1,19 @@
-import styles from "./ItemInfo.module.scss";
+import { Icon } from "../../UI";
+
+import s from "./itemInfo.module.scss";
 
 export default function ItemInfo(objectValues) {
   const { pictureText, pictureUrl, infoIcon, infoText } = objectValues;
 
   return (
-    <div className={styles.item}>
-      <div className={styles.item__picture}>
-        <img src={pictureUrl} alt={pictureText} />
+    <div className={s.item}>
+      <div className={s.item__picture}>
+        <img src={pictureUrl} alt={pictureText} loading="lazy" />
         <p>{pictureText}</p>
       </div>
 
-      <div className={styles.item__card}>
-        <img src={infoIcon} alt={infoText} />
+      <div className={s.item__card}>
+        <Icon name={infoIcon} className={s.item__icon} />
         <p>{infoText}</p>
       </div>
     </div>
