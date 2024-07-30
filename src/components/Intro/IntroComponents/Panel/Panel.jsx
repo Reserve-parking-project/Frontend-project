@@ -1,28 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
+import PanelInput from "./PanelInput.jsx";
 import ActionsPanel from "./ActionsPanel/ActionsPanel.jsx";
-import { Icon } from "../../..//UI";
+import { Icon } from "../../../UI";
 
 import s from "./panel.module.scss";
 
 export default function Panel() {
-  const [inputValue, setInputValue] = useState("");
-
-  function trackingUserInput(event) {
-    setInputValue(event.target.value);
-  }
-
   return (
     <div className={s.panel}>
       <div className={s.panel__input}>
-        <input
-          type="text"
-          placeholder="Address, place or city"
-          onChange={trackingUserInput}
-          value={inputValue}
-        />
-
+        <PanelInput />
         <Icon name="mapLogo" className={s["panel__input-icon"]} />
       </div>
 
@@ -33,9 +21,9 @@ export default function Panel() {
       <ActionsPanel title="Departure" />
 
       <div className={s.panel__searching}>
-        <Link to="/search" className={s.panel__button}>
-          Search
-        </Link>
+        <button className={s.panel__button}>
+          <Link to="/search">Search</Link>
+        </button>
       </div>
     </div>
   );

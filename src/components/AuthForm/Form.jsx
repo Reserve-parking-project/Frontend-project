@@ -36,11 +36,9 @@ export default function FormComponent(props) {
 
       {children}
 
-      <div className={s.form__auth}>
-        <button className={s.button} type="submit">
-          Next
-        </button>
-      </div>
+      <button className={s.button} type="submit">
+        Next
+      </button>
     </form>
   );
 }

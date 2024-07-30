@@ -2,37 +2,31 @@
   max-width: 895px;
   margin: 0 auto;
 
-  & h6 {
-    font-family: var(--kanit-font);
-    font-weight: 500;
-    color: var(--main-text-color);
+  &__items {
+    display: flex;
 
     margin-bottom: 20px;
-  }
-}
 
-.items {
-  display: flex;
+    & div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  margin-bottom: 20px;
+      background-color: var(--block-bg-color);
+      border-radius: 11px;
+      padding: 8px 14.2px;
 
-  & div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      margin-left: 21px;
 
-    background-color: var(--block-bg-color);
-    border-radius: 11px;
-    padding: 8px 14.2px;
+      & p {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--main-text-color);
+      }
 
-    & p {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--main-text-color);
-    }
-
-    &:not(:last-child) {
-      margin-right: 7px;
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
     }
   }
 }

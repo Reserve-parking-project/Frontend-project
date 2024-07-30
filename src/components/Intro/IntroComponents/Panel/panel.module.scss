@@ -25,15 +25,18 @@
   }
 
   &__button {
-    width: 95px;
-    height: 41px;
     background-color: var(--main-btn-bg-color);
     border-radius: 8px;
 
     font-size: 22px;
     color: var(--white-text-color);
 
+    padding: 4.3px 14.2px;
     transition: all 0.3s;
+
+    & a {
+      color: var(--white-text-color);
+    }
   }
 
   &__button:hover {
