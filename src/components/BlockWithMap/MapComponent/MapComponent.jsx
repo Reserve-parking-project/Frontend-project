@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import { divIcon, point } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 

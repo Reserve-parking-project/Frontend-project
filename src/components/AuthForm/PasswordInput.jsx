@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { resultCheckingInput } from "../../functions/getResultCheckInput";
+import { resultCheckingInput } from "src/functions/getResultCheckInput";
 import { Icon } from "../UI";
 
 import s from "./authForm.module.scss";

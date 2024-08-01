@@ -1,5 +1,5 @@
-import IconComponent from "./IconComponent.jsx";
-import { companiesIcons } from "../../../constants";
+import IconComponent from "./IconComponent";
+import { companiesIcons } from "src/constants";
 
 import s from "./companiesIcons.module.scss";
 

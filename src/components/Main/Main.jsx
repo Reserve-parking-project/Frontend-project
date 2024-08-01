@@ -1,10 +1,10 @@
-import { Intro, ItemsInfo, BlockWithMap } from "../index";
+import { Intro, ItemsInfo, BlockWithMap } from "..";
 
-import classes from "./main.module.scss";
+import s from "./main.module.scss";
 
 export default function Main() {
   return (
-    <main className={classes.main}>
+    <main className={s.main}>
       <Intro />
       <ItemsInfo />
       <BlockWithMap />

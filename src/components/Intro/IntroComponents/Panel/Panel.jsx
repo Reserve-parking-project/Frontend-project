@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import PanelInput from "./PanelInput.jsx";
 import ActionsPanel from "./ActionsPanel/ActionsPanel.jsx";
-import { Icon } from "../../../UI";
+import { Icon } from "src/components/UI";
 
 import s from "./panel.module.scss";
 

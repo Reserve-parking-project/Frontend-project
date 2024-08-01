@@ -1,5 +1,5 @@
-import { Icon, ParkingDecor } from "../UI";
-import { getMode } from "../../functions/getMode";
+import { Icon, ParkingDecor } from "src/components/UI";
+import { getMode } from "src/functions/getMode";
 
 import s from "./authenticationCars.module.scss";
 

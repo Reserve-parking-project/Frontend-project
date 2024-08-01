@@ -1,8 +1,8 @@
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 import PasswordInput from "./PasswordInput";
-import { login } from "../../store/authSlice";
-import { useNavigate } from "react-router-dom";
+import { login } from "src/store/authSlice";
 
 import s from "./authForm.module.scss";
 

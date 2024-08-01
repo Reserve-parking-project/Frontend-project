@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Icon } from "../../UI";
+import { Icon } from "..";
 
 import s from "./arrowExit.module.scss";
 

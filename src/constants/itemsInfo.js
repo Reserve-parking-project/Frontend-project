@@ -1,6 +1,6 @@
-import airportImage from "../../public/image/ItemsInfo/Picture/airport.jpg";
-import stationImage from "../../public/image/ItemsInfo/Picture/station.jpg";
-import cityImage from "../../public/image/ItemsInfo/Picture/city.jpg";
+import airportImage from "src/../public/image/ItemsInfo/Picture/airport.jpg";
+import stationImage from "src/../public/image/ItemsInfo/Picture/station.jpg";
+import cityImage from "src/../public/image/ItemsInfo/Picture/city.jpg";
 
 export default [
   {

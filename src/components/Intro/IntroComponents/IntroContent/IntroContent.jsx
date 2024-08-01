@@ -1,6 +1,6 @@
 import IntroItem from "./IntroItem.jsx";
 import Panel from "../Panel/Panel";
-import { introContent } from "../../../../constants";
+import { introContent } from "src/constants";
 
 import s from "./introContent.module.scss";
 

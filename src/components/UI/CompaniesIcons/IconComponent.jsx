@@ -1,4 +1,4 @@
-import { Icon } from "../index";
+import { Icon } from "..";
 
 export default function IconComponent({ imageName, ...props }) {
   return (

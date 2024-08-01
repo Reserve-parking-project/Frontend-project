@@ -1,7 +1,7 @@
 import MapItem from "./MapItem/MapItem";
 import MapComponent from "./MapComponent/MapComponent";
 
-import { blockWithMap } from "../../constants";
+import { blockWithMap } from "src/constants";
 
 import s from "./blockWithMap.module.scss";
 

@@ -1,5 +1,5 @@
 import ItemInfo from "./ItemInfo/ItemInfo";
-import { itemsInfo } from "../../constants";
+import { itemsInfo } from "src/constants";
 
 import s from "./itemsInfo.module.scss";
 

@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 
-import { getMode } from "../../functions/getMode";
 import SignUpPage from "./Pages/SignUpPage";
 import LogInPage from "./Pages/LogInPage";
-
-import { ArrowExit } from "../UI";
+import { ArrowExit } from "src/components/UI";
+import { getMode } from "src/functions/getMode";
 
 import s from "./authForm.module.scss";
 

@@ -1,11 +1,10 @@
 import { useState } from "react";
 
 import FormComponent from "../Form";
-import { resultCheckingInput } from "../../../functions/getResultCheckInput";
+import { resultCheckingInput } from "src/functions/getResultCheckInput";
+import { Confirmation } from "src/components/UI";
 
-import { Confirmation } from "../../UI";
-
-import styles from "./signUpPage.module.scss";
+import s from "./signUpPage.module.scss";
 
 export default function SignUpPage() {
   const [inputChecking, setInputChecking] = useState("");
@@ -16,27 +15,25 @@ export default function SignUpPage() {
       inputChecking={inputChecking}
       setInputChecking={setInputChecking}
     >
-      <p className={styles.text__password}>
-        The password must contain at least:
-      </p>
+      <p className={s.text__password}>The password must contain at least:</p>
 
       <Confirmation
         className={
           inputChecking.length >= 1 && inputChecking[0] !== " "
-            ? styles.text_active
-            : styles.text
+            ? s.text_active
+            : s.text
         }
         text="1 letter - Done"
       />
       <Confirmation
-        className={!resCheckInput ? styles.text : styles.text_active}
+        className={!resCheckInput ? s.text : s.text_active}
         text="1 number or special character (e.g., # ? ! &) - Done.,"
       />
       <Confirmation
         className={
           inputChecking.length >= 10 && inputChecking[0] !== " "
-            ? styles.text_active
-            : styles.text
+            ? s.text_active
+            : s.text
         }
         text="10 characters"
       />

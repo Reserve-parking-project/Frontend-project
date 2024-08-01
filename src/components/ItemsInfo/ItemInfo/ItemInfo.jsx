@@ -1,4 +1,4 @@
-import { Icon } from "../../UI";
+import { Icon } from "src/components/UI";
 
 import s from "./itemInfo.module.scss";
 

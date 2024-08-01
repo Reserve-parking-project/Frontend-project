@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-import { Icon } from "../../../../UI";
+import { Icon } from "src/components/UI";
 
 import s from "./actionsPanel.module.scss";
 

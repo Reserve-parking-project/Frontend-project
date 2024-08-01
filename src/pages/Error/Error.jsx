@@ -1,4 +1,4 @@
-import { ArrowExit, Icon } from "../../components/UI";
+import { ArrowExit, Icon } from "src/components/UI";
 
 import s from "./errorPage.module.scss";
 

@@ -1,4 +1,4 @@
-import sprite from "../../../../public/sprite.svg";
+import sprite from "src/../public/sprite.svg";
 
 import s from "./icon.module.scss";
 
