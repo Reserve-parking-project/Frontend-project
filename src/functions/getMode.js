@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 
-export function getMode() {
+export function getMode(parameter) {
   const [searchParams, setSearchParams] = useSearchParams();
-  return searchParams.get("mode");
+  return searchParams.get(parameter);
 }

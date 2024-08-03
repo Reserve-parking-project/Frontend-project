@@ -6,14 +6,18 @@
   --scroll-bg-color: #f9f7ff;
   --block-bg-color: #fff;
   --block-opacity-bg-color: rgba(255, 255, 255, 0.5);
-  
+
   // blocks
   --block-shadow-color: rgba(141, 82, 237, 0.6);
+  --border-color: #d2d2d2;
+  --pink-border-color: #c5a2ff;
+  --input-border-color: #7c718c;
 
   //  color
   --main-text-color: #47385f;
   --secondary-text-color: #8d52ed;
   --white-text-color: #f9f7ff;
+  --input-text-color: #7c718c;
   --title-text-color: linear-gradient(
     90deg,
     rgba(141, 82, 237, 1) 8%,
@@ -24,6 +28,7 @@
     rgba(154, 92, 255, 1) 95%,
     rgba(197, 162, 255, 1) 100%
   );
+  --span-text-color: rgba(71, 56, 95, 0.7);
 
   // button color
   --main-btn-bg-color: #ad7cfe;

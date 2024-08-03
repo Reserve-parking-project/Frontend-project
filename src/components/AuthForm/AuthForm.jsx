@@ -8,8 +8,7 @@ import { getMode } from "src/functions/getMode";
 import s from "./authForm.module.scss";
 
 export default function AuthForm() {
-  const mode = getMode();
-
+  const mode = getMode("mode");
   return (
     <div className={s.form}>
       <ArrowExit className={s.form__arrow} />

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import PanelInput from "./PanelInput.jsx";
 import ActionsPanel from "./ActionsPanel/ActionsPanel.jsx";
-import { Icon } from "src/components/UI";
+import { Button, Icon } from "src/components/UI";
 
 import s from "./panel.module.scss";
 
@@ -21,9 +21,9 @@ export default function Panel() {
       <ActionsPanel title="Departure" />
 
       <div className={s.panel__searching}>
-        <button className={s.panel__button}>
-          <Link to="/search">Search</Link>
-        </button>
+        <Button className={s.panel__button}>
+          <Link to="/search?booking=single">Search</Link>
+        </Button>
       </div>
     </div>
   );

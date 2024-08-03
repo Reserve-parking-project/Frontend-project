@@ -1,19 +1,18 @@
-import { Icon } from "../../components/UI";
+import { SearchHeader } from "src/components";
+import SearchMap from "src/components/SearchMap/SearchMap";
+import SearchPanel from "src/components/SearchPanel/SearchPanel";
 
-import styles from "./searchParking.module.scss";
+import s from "./searchParking.module.scss";
 
 const SearchingBooking = () => {
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.header__container}>
-          <p>LOGO</p>
+      <SearchHeader />
 
-          <button type="button">Log in</button>
-
-          <Icon name="icon-language" />
-        </div>
-      </header>
+      <main className={s.main}>
+        <SearchPanel />
+        <SearchMap />
+      </main>
     </>
   );
 };

@@ -4,7 +4,8 @@ import { getMode } from "src/functions/getMode";
 import s from "./authenticationCars.module.scss";
 
 export default function AuthenticationCars() {
-  const mode = getMode();
+  const mode = getMode("mode");
+  
   return (
     <div className={s.cars}>
       <div className={s.cars__parking}>

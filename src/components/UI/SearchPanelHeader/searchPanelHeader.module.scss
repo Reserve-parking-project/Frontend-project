@@ -1,0 +1,27 @@
+.panelHeader {
+  color: var(--dark-text-color);
+  font-size: 14px;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 21px;
+
+  height: 40px;
+
+  &_title {
+    font-family: var(--kanit-font);
+
+    border-bottom: 1px solid var(--pink-border-color);
+    padding: 12px 0px;
+  }
+
+  &_text {
+    & span {
+      color: var(--span-text-color);
+    }
+  }
+}

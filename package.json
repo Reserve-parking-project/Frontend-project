@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
+    "date-fns": "^3.6.0",
     "leaflet": "^1.9.4",
     "math": "^0.0.3",
     "morgan": "^1.10.0",

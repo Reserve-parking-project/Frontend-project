@@ -1,10 +1,13 @@
 import ArrowExit from "./ArrowExit/ArrowExit";
-import Button from "./Button";
+import Button from "./Button/Button";
 import ParkingDecor from "./ParkingDecor/ParkingDecor";
 import CompaniesIcons from "./CompaniesIcons/CompaniesIcons";
 import ButtonModal from "./ButtonModal";
 import Confirmation from "./Confirmation/Confirmation";
 import Icon from "./Icon/Icon";
+import SearchPanelHeader from "./SearchPanelHeader/SearchPanelHeader";
+import SearchTabs from "./SearchTabs/SearchTabs";
+import SearchInput from "./SearchInput";
 
 export {
   ArrowExit,
@@ -14,4 +17,7 @@ export {
   ButtonModal,
   Confirmation,
   Icon,
+  SearchPanelHeader,
+  SearchTabs,
+  SearchInput,
 };
