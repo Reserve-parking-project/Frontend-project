@@ -1,7 +1,7 @@
-import InfoContent from "./InfoContent";
-import { Icon } from "../UI";
+import InfoContent from './InfoContent';
+import { Icon } from '../../shared/ui';
 
-import s from "./footer.module.scss";
+import s from './footer.module.scss';
 
 const Footer = () => {
   return (

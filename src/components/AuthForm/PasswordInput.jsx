@@ -1,23 +1,23 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { resultCheckingInput } from "src/functions/getResultCheckInput";
-import { Icon } from "../UI";
+import { getResultCheckingInput } from 'src/shared/utils';
+import { Icon } from 'src/shared/ui';
 
-import s from "./authForm.module.scss";
+import s from './authForm.module.scss';
 
 export default function PasswordInput({ inputChecking, setInputChecking }) {
-  const [passwordType, setPasswordType] = useState("password");
-  const resCheckInput = resultCheckingInput(inputChecking);
+  const [passwordType, setPasswordType] = useState('password');
+  const resCheckInput = getResultCheckingInput(inputChecking);
 
   const changeInputCheck = (event) => {
     setInputChecking(event.target.value);
   };
 
   const changePasswordType = () => {
-    if (passwordType === "password") {
-      setPasswordType("text");
+    if (passwordType === 'password') {
+      setPasswordType('text');
     } else {
-      setPasswordType("password");
+      setPasswordType('password');
     }
   };
 

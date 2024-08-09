@@ -2,4 +2,54 @@
   min-width: 348px;
 
   background-color: var(--block-bg-color);
+
+  &_filter {
+    max-width: 80px;
+    margin-left: 21px;
+
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+
+      background: none;
+      border: 1px solid var(--input-border-color);
+      border-radius: 9px;
+
+      color: var(--main-text-color);
+      font-size: 14px;
+
+      & span {
+        display: block;
+        position: relative;
+
+        width: 13px;
+        height: 1px;
+
+        background-color: var(--main-btn-bg-color);
+        border-radius: 1px;
+
+        &::before,
+        &::after {
+          content: "";
+          position: relative;
+          display: block;
+
+          height: 1px;
+
+          background-color: var(--main-btn-bg-color);
+          border-radius: 1px;
+        }
+
+        &::before {
+          top: -3px;
+        }
+        &::after {
+          bottom: -2px;
+          width: 8px;
+        }
+      }
+    }
+  }
 }

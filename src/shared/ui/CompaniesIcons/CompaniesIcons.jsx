@@ -1,7 +1,7 @@
-import IconComponent from "./IconComponent";
-import { companiesIcons } from "src/constants";
+import IconComponent from './IconComponent';
+import { companiesIcons } from 'src/shared/constants';
 
-import s from "./companiesIcons.module.scss";
+import s from './companiesIcons.module.scss';
 
 export default function CompaniesIcons() {
   return (

@@ -1,7 +1,7 @@
-import { SearchForm } from "..";
-import { SearchPanelHeader, SearchTabs } from "../UI";
+import { SearchForm } from '..';
+import { SearchPanelHeader, SearchTabs } from '../../shared/ui';
 
-import s from "./searchPanel.module.scss";
+import s from './searchPanel.module.scss';
 
 export default function SearchPanel() {
   return (
@@ -9,6 +9,12 @@ export default function SearchPanel() {
       <SearchPanelHeader />
       <SearchTabs />
       <SearchForm />
+
+      <div className={s.panel_filter}>
+        <button type="button">
+          Filter <span></span>
+        </button>
+      </div>
     </div>
   );
 }

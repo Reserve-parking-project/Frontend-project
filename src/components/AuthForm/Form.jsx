@@ -1,10 +1,10 @@
-import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
-import PasswordInput from "./PasswordInput";
-import { login } from "src/store/authSlice";
+import PasswordInput from './PasswordInput';
+import { login } from 'src/app/store/authSlice';
 
-import s from "./authForm.module.scss";
+import s from './authForm.module.scss';
 
 export default function FormComponent(props) {
   const { children, inputChecking, setInputChecking } = props;
@@ -19,7 +19,7 @@ export default function FormComponent(props) {
     console.table(data);
 
     dispatch(login());
-    navigate("/");
+    navigate('/');
   };
 
   return (
@@ -29,10 +29,7 @@ export default function FormComponent(props) {
         <input id="email" type="email" name="email" required />
       </div>
 
-      <PasswordInput
-        inputChecking={inputChecking}
-        setInputChecking={setInputChecking}
-      />
+      <PasswordInput inputChecking={inputChecking} setInputChecking={setInputChecking} />
 
       {children}
 

@@ -1,10 +1,6 @@
-import { useState } from "react";
+import Input from './Input';
 
-import Input from "./Input";
-
-import { Icon, SearchInput } from "src/components/UI";
-
-import s from "./searchInputData.module.scss";
+import s from './searchInputData.module.scss';
 
 export default function SearchInputData({ text }) {
   return (

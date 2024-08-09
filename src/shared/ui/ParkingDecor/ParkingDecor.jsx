@@ -1,6 +1,6 @@
-import { Icon } from "..";
+import { Icon } from '..';
 
-import s from "./parkingDecor.module.scss";
+import s from './parkingDecor.module.scss';
 
 const ParkingDecor = ({ urlCar, children, ...props }) => {
   return (

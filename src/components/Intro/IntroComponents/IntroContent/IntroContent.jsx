@@ -1,8 +1,8 @@
-import IntroItem from "./IntroItem.jsx";
-import Panel from "../Panel/Panel";
-import { introContent } from "src/constants";
+import IntroItem from './IntroItem.jsx';
+import Panel from '../Panel/Panel';
+import { introContent } from 'src/shared/constants/index.js';
 
-import s from "./introContent.module.scss";
+import s from './introContent.module.scss';
 
 export default function IntroContent() {
   return (

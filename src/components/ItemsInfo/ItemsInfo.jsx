@@ -1,7 +1,7 @@
-import ItemInfo from "./ItemInfo/ItemInfo";
-import { itemsInfo } from "src/constants";
+import ItemInfo from './ItemInfo/ItemInfo';
+import { itemsInfo } from 'src/shared/constants';
 
-import s from "./itemsInfo.module.scss";
+import s from './itemsInfo.module.scss';
 
 export default function ItemsInfo() {
   return (

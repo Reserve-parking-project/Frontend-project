@@ -1,8 +1,9 @@
-import { useRef, useState } from "react";
-import { format, parseISO } from "date-fns";
-import { Icon, SearchInput } from "src/components/UI";
+import { useRef, useState } from 'react';
+import { format, parseISO } from 'date-fns';
 
-import s from "./searchInputData.module.scss";
+import { Icon, SearchInput } from 'src/shared/ui';
+
+import s from './searchInputData.module.scss';
 
 export default function Input({ type, nameIcon, initState }) {
   const userData = useRef(null);
@@ -10,10 +11,10 @@ export default function Input({ type, nameIcon, initState }) {
   const [date, setDate] = useState(initState);
 
   function handleInputChange(event) {
-    if (type === "date") {
+    if (type === 'date') {
       const data = event.target.value;
 
-      const formattedDate = data ? format(parseISO(data), "eee, MMM d") : "";
+      const formattedDate = data ? format(parseISO(data), 'eee, MMM d') : '';
       setDate(formattedDate);
     } else {
       setDate(event.target.value);
@@ -27,12 +28,7 @@ export default function Input({ type, nameIcon, initState }) {
   return (
     <div className={s.inputData_input}>
       <p>{date}</p>
-      <SearchInput
-        ref={userData}
-        type={type}
-        name={type}
-        onChange={handleInputChange}
-      />
+      <SearchInput ref={userData} type={type} name={type} onChange={handleInputChange} />
 
       <button type="button" onClick={handleClickDate}>
         <Icon name={nameIcon} />

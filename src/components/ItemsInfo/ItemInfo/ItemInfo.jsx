@@ -1,6 +1,6 @@
-import { Icon } from "src/components/UI";
+import { Icon } from 'src/shared/ui';
 
-import s from "./itemInfo.module.scss";
+import s from './itemInfo.module.scss';
 
 export default function ItemInfo(objectValues) {
   const { pictureText, pictureUrl, infoIcon, infoText } = objectValues;

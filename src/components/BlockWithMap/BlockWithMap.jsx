@@ -1,14 +1,14 @@
-import MapItem from "./MapItem/MapItem";
-import MapBlock from "./MapBlock";
-import { blockWithMap } from "src/constants";
+import MapItem from './MapItem/MapItem';
+import MapBlock from './MapBlock';
+import { blockWithMap } from 'src/shared/constants';
 
-import s from "./blockWithMap.module.scss";
+import s from './blockWithMap.module.scss';
 
 export default function BlockWithMap() {
   return (
     <div className={s.mapBlock}>
       <div className={s.mapBlock__body}>
-        <div className={s["mapBlock__block-map"]}>
+        <div className={s['mapBlock__block-map']}>
           <MapBlock />
         </div>
 

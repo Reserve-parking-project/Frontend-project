@@ -1,14 +1,14 @@
-import { useRef, useState } from "react";
+import { useRef, useState } from 'react';
 
-import { Icon } from "src/components/UI";
+import { Icon } from 'src/shared/ui';
 
-import s from "./actionsPanel.module.scss";
+import s from './actionsPanel.module.scss';
 
 export default function DatePicker({ name }) {
   const [userDate, setUserDate] = useState({
-    day: "00",
-    month: "00",
-    year: "24",
+    day: '00',
+    month: '00',
+    year: '24',
   });
   const inputDate = useRef(null);
 
@@ -18,7 +18,7 @@ export default function DatePicker({ name }) {
 
   function handleChangeDate(event) {
     setUserDate((prevState) => {
-      const date = event.target.value.split("-");
+      const date = event.target.value.split('-');
 
       return {
         day: date[2],
@@ -35,13 +35,7 @@ export default function DatePicker({ name }) {
           <Icon name="date" />
         </button>
 
-        <input
-          onChange={handleChangeDate}
-          ref={inputDate}
-          type="date"
-          name={name}
-          id={name}
-        />
+        <input onChange={handleChangeDate} ref={inputDate} type="date" name={name} id={name} />
         <p>{`${userDate.day}/${userDate.month}/${userDate.year}`}</p>
       </div>
     </>

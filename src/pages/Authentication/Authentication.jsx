@@ -1,7 +1,7 @@
-import { AuthenticationCars, AuthForm } from "src/components";
-import { CompaniesIcons } from "src/components/UI";
+import { AuthenticationCars, AuthForm } from 'src/components';
+import { CompaniesIcons } from 'src/shared/ui';
 
-import s from "./authentication.module.scss";
+import s from './authentication.module.scss';
 
 export default function Authentication() {
   return (

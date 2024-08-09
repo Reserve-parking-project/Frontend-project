@@ -1,6 +1,6 @@
-import { ArrowExit, Icon } from "src/components/UI";
+import { ArrowExit, Icon } from 'src/shared/ui';
 
-import s from "./errorPage.module.scss";
+import s from './errorPage.module.scss';
 
 const ErrorPage = () => {
   return (

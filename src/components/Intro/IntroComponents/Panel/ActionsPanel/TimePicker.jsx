@@ -1,11 +1,11 @@
-import { useRef, useState } from "react";
-import { Icon } from "src/components/UI";
+import { useRef, useState } from 'react';
+import { Icon } from 'src/shared/ui';
 
-import s from "./actionsPanel.module.scss";
+import s from './actionsPanel.module.scss';
 
 export default function TimePicker() {
   const inputTime = useRef(null);
-  const [userTime, setUserTime] = useState("00:00");
+  const [userTime, setUserTime] = useState('00:00');
 
   function handlePickedTime() {
     inputTime.current.showPicker();

@@ -1,28 +1,21 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import FormComponent from "../Form";
-import { resultCheckingInput } from "src/functions/getResultCheckInput";
-import { Confirmation } from "src/components/UI";
+import FormComponent from '../Form';
+import { getResultCheckingInput } from 'src/shared/utils';
+import { Confirmation } from 'src/shared/ui';
 
-import s from "./signUpPage.module.scss";
+import s from './signUpPage.module.scss';
 
 export default function SignUpPage() {
-  const [inputChecking, setInputChecking] = useState("");
-  const resCheckInput = resultCheckingInput(inputChecking);
+  const [inputChecking, setInputChecking] = useState('');
+  const resCheckInput = getResultCheckingInput(inputChecking);
 
   return (
-    <FormComponent
-      inputChecking={inputChecking}
-      setInputChecking={setInputChecking}
-    >
+    <FormComponent inputChecking={inputChecking} setInputChecking={setInputChecking}>
       <p className={s.text__password}>The password must contain at least:</p>
 
       <Confirmation
-        className={
-          inputChecking.length >= 1 && inputChecking[0] !== " "
-            ? s.text_active
-            : s.text
-        }
+        className={inputChecking.length >= 1 && inputChecking[0] !== ' ' ? s.text_active : s.text}
         text="1 letter - Done"
       />
       <Confirmation
@@ -30,11 +23,7 @@ export default function SignUpPage() {
         text="1 number or special character (e.g., # ? ! &) - Done.,"
       />
       <Confirmation
-        className={
-          inputChecking.length >= 10 && inputChecking[0] !== " "
-            ? s.text_active
-            : s.text
-        }
+        className={inputChecking.length >= 10 && inputChecking[0] !== ' ' ? s.text_active : s.text}
         text="10 characters"
       />
     </FormComponent>

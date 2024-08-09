@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { Icon } from "..";
+import { Link } from 'react-router-dom';
+import { Icon } from '..';
 
-import s from "./arrowExit.module.scss";
+import s from './arrowExit.module.scss';
 
 const ArrowExit = ({ ...props }) => {
   return (

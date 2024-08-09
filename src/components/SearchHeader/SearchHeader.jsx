@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import { Icon } from "../UI";
+import { Icon } from '../../shared/ui';
 
-import s from "./searchHeader.module.scss";
+import s from './searchHeader.module.scss';
 
 export default function SearchHeader() {
   return (
