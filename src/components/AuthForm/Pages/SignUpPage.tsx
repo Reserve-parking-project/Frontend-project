@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import FormComponent from '../Form';
+import { Form } from 'src/shared/ui';
 import { getResultCheckingInput } from 'src/shared/utils';
 import { Confirmation } from 'src/shared/ui';
 
@@ -11,7 +11,7 @@ export default function SignUpPage() {
   const resCheckInput = getResultCheckingInput(inputChecking);
 
   return (
-    <FormComponent inputChecking={inputChecking} setInputChecking={setInputChecking}>
+    <Form inputChecking={inputChecking} setInputChecking={setInputChecking}>
       <p className={s.text__password}>The password must contain at least:</p>
 
       <Confirmation
@@ -26,6 +26,6 @@ export default function SignUpPage() {
         className={inputChecking.length >= 10 && inputChecking[0] !== ' ' ? s.text_active : s.text}
         text="10 characters"
       />
-    </FormComponent>
+    </Form>
   );
 }

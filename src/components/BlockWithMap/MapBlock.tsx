@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import MapComponent from "../MapComponent/MapComponent";
+import MapComponent from "../MapComponent/MapComponent.jsx"
 
-export default function MapBlock() {
+const MapBlock = () => {
   const [userPosition, setUserPosition] = useState(null);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
 
   useEffect(() => {
     function getLocation() {
@@ -17,12 +17,12 @@ export default function MapBlock() {
             });
           },
           (error) => {
-            console.error("Error obtaining position:", error);
+            console.error('Error obtaining position:', error);
             setError(error.message);
           }
         );
       } else {
-        setError("Геолокація не підтримується цим браузером.");
+        setError('Геолокація не підтримується цим браузером.');
       }
     }
 
@@ -30,4 +30,6 @@ export default function MapBlock() {
   }, []);
 
   return <MapComponent userPosition={userPosition} />;
-}
+};
+
+export default MapBlock;

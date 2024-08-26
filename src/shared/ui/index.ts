@@ -8,6 +8,7 @@ import Icon from './Icon/Icon';
 import SearchPanelHeader from './SearchPanelHeader/SearchPanelHeader';
 import SearchTabs from './SearchTabs/SearchTabs';
 import SearchInput from './SearchInput/SearchInput';
+import Form from './Form/Form';
 
 export {
   ArrowExit,
@@ -20,4 +21,5 @@ export {
   SearchPanelHeader,
   SearchTabs,
   SearchInput,
+  Form,
 };

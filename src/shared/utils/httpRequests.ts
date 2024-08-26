@@ -1,26 +1,26 @@
-export async function sendingUserData(url, userData) {
+export async function sendingUserData(url: string, userData) {
   const response = await fetch(url, {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-type": "application/json",
+      'Content-type': 'application/json',
     },
     body: JSON.stringify(userData),
   });
   const result = await response.json();
 
   if (!response.ok) {
-    throw new Error("Fail when sending data");
+    throw new Error('Fail when sending data');
   }
 
   return result.message;
 }
 
-export async function getData(url) {
+export async function getData(url: string) {
   const response = await fetch(url);
   const result = await response.json();
 
   if (!response.ok) {
-    throw new Error("Fail while getting data");
+    throw new Error('Fail while getting data');
   }
 
   return result;

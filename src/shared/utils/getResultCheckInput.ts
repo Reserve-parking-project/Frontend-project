@@ -1,5 +1,5 @@
-export const getResultCheckingInput = (str) => {
-  const letters = str.split("");
+export const getResultCheckingInput = (str: string) => {
+  const letters = str.split('');
   const regex = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/;
   return letters.some((item) => regex.test(item));
 };

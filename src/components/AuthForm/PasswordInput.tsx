@@ -1,16 +1,19 @@
-import { useState } from 'react';
+import { ChangeEvent, FC, useState } from 'react';
 
 import { getResultCheckingInput } from 'src/shared/utils';
 import { Icon } from 'src/shared/ui';
 
 import s from './authForm.module.scss';
 
-export default function PasswordInput({ inputChecking, setInputChecking }) {
+const PasswordInput: FC<{ inputChecking: string; setInputChecking: (value: string) => void }> = ({
+  inputChecking,
+  setInputChecking,
+}) => {
   const [passwordType, setPasswordType] = useState('password');
   const resCheckInput = getResultCheckingInput(inputChecking);
 
-  const changeInputCheck = (event) => {
-    setInputChecking(event.target.value);
+  const changeInputCheck = (event: ChangeEvent) => {
+    setInputChecking((event.target as HTMLInputElement).value);
   };
 
   const changePasswordType = () => {
@@ -48,4 +51,6 @@ export default function PasswordInput({ inputChecking, setInputChecking }) {
       </div>
     </div>
   );
-}
+};
+
+export default PasswordInput;

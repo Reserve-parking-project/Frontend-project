@@ -1,20 +1,28 @@
+import { FC, FormEvent } from 'react';
+
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import PasswordInput from './PasswordInput';
-import { login } from 'src/app/store/authSlice';
+import PasswordInput from '../../../components/AuthForm/PasswordInput';
+import { login } from 'src/app/store/slices/authSlice';
 
 import s from './authForm.module.scss';
 
-export default function FormComponent(props) {
-  const { children, inputChecking, setInputChecking } = props;
+import type { FormProps } from './types';
+
+const Form: FC<FormProps> = ({
+  inputChecking,
+  setInputChecking,
+  resultCheckingInput,
+  children,
+}) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const submitForm = (event) => {
+  const submitForm = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
 
-    const fd = new FormData(event.target);
+    const fd = new FormData(event.target as HTMLFormElement);
     const data = Object.fromEntries(fd.entries());
     console.table(data);
 
@@ -38,4 +46,6 @@ export default function FormComponent(props) {
       </button>
     </form>
   );
-}
+};
+
+export default Form;

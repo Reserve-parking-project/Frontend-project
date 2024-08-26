@@ -9,6 +9,7 @@ import s from './authForm.module.scss';
 
 export default function AuthForm() {
   const mode = useGetUrlParameter('mode');
+
   return (
     <div className={s.form}>
       <ArrowExit className={s.form__arrow} />

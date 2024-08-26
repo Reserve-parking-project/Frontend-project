@@ -1,4 +1,4 @@
-import { Header, Footer, Main } from "src/components";
+import { Header, Footer, Main } from 'src/components';
 
 const Home = () => {
   return (
