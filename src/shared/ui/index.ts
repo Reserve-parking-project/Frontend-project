@@ -9,6 +9,7 @@ import SearchPanelHeader from './SearchPanelHeader/SearchPanelHeader';
 import SearchTabs from './SearchTabs/SearchTabs';
 import SearchInput from './SearchInput/SearchInput';
 import Form from './Form/Form';
+import AuthenticationCars from './AuthenticationCars/AuthenticationCars';
 
 export {
   ArrowExit,
@@ -22,4 +23,5 @@ export {
   SearchTabs,
   SearchInput,
   Form,
+  AuthenticationCars,
 };

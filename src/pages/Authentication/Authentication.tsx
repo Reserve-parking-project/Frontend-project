@@ -1,5 +1,5 @@
-import { AuthenticationCars, AuthForm } from 'src/components';
-import { CompaniesIcons } from 'src/shared/ui';
+import { AuthForm } from 'src/components';
+import { CompaniesIcons, AuthenticationCars } from 'src/shared/ui';
 
 import s from './authentication.module.scss';
 

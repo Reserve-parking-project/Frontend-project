@@ -3,10 +3,10 @@ import { FC, FormEvent } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import PasswordInput from '../../../components/AuthForm/PasswordInput';
+import PasswordInput from './PasswordInput';
 import { login } from 'src/app/store/slices/authSlice';
 
-import s from './authForm.module.scss';
+import s from './form.module.scss';
 
 import type { FormProps } from './types';
 

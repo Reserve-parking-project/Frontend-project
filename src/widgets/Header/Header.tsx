@@ -1,23 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import HeaderBurger from "./HeaderBurger";
-import HeaderNavigation from "./HeaderNavigation";
+import HeaderBurger from './ui/HeaderBurger';
+import HeaderNavigation from './ui/HeaderNavigation/HeaderNavigation';
 
-import s from "./header.module.scss";
+import s from './header.module.scss';
 
 export default function Header() {
-  const [isActiveBurgerMenu, setIsActiveBurgerMenu] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
+  const [isActiveBurgerMenu, setIsActiveBurgerMenu] = useState<boolean>(false);
 
   function handleClickActive() {
-    setIsActiveBurgerMenu((prevState) => !prevState);
-    console.log("Hello i'm React JS");
-
     if (!isActiveBurgerMenu) {
-      document.body.classList.add("no-scroll");
+      document.body.classList.add('no-scroll');
     } else {
-      document.body.classList.remove("no-scroll");
+      document.body.classList.remove('no-scroll');
     }
+    setIsActiveBurgerMenu((prevState) => !prevState);
   }
 
   useEffect(() => {
@@ -28,10 +26,10 @@ export default function Header() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [scrolled]);
 
@@ -51,10 +49,7 @@ export default function Header() {
             {/* <img src="#" alt="Header logo" /> */}
           </a>
 
-          <HeaderBurger
-            handleClickActive={handleClickActive}
-            stateButton={isActiveBurgerMenu}
-          />
+          <HeaderBurger handleClickActive={handleClickActive} stateButton={isActiveBurgerMenu} />
 
           <HeaderNavigation isActive={isActiveBurgerMenu} />
         </div>

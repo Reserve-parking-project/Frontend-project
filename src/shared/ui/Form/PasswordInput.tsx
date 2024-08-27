@@ -3,7 +3,7 @@ import { ChangeEvent, FC, useState } from 'react';
 import { getResultCheckingInput } from 'src/shared/utils';
 import { Icon } from 'src/shared/ui';
 
-import s from './authForm.module.scss';
+import s from './form.module.scss';
 
 const PasswordInput: FC<{ inputChecking: string; setInputChecking: (value: string) => void }> = ({
   inputChecking,
@@ -45,7 +45,7 @@ const PasswordInput: FC<{ inputChecking: string; setInputChecking: (value: strin
 
         <div onClick={changePasswordType}>
           <i aria-hidden="true">
-            <Icon name="icon" />
+            <Icon className={s.eye} name="icon" />
           </i>
         </div>
       </div>
