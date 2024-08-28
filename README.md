@@ -29,9 +29,18 @@ client/
 ├── node_modules/
 ├── public/
 ├── src/
-│   ├── assets/
-│   │   └── image/
-│   │   │   └── ...
+│   ├── app/
+│   │   └── routes/
+│   │   │ └── router.tsx
+|   |   └── store/
+│   │   │ └── store.ts
+│   │   │ └── slices/
+│   │   │ | └── ...
+|   |   └── /styles
+│   │   │ └── global.scss
+│   │   │ └── reset.scss
+│   │   │ └── variables.scss
+│   │   └── App.tsx
 │   ├── components/
 │   │   └── ...
 │   │   └── UI/
