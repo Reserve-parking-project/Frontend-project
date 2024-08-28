@@ -1,8 +1,8 @@
-import IntroContent from "./IntroComponents/IntroContent/IntroContent.jsx";
+import IntroContent from './IntroComponents/IntroContent/IntroContent.js';
 
-import s from "./intro.module.scss";
+import s from './intro.module.scss';
 
-export default function Intro() {
+const Intro = () => {
   return (
     <section className={s.intro}>
       <div className="intro__container">
@@ -14,4 +14,6 @@ export default function Intro() {
       </div>
     </section>
   );
-}
+};
+
+export default Intro;

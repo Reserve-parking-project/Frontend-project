@@ -2,21 +2,13 @@ import { useState, useEffect } from 'react';
 
 import HeaderBurger from './ui/HeaderBurger';
 import HeaderNavigation from './ui/HeaderNavigation/HeaderNavigation';
+import { useIsActiveMenu } from 'src/features/header/useIsActiveMenu';
 
 import s from './header.module.scss';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState<boolean>(false);
-  const [isActiveBurgerMenu, setIsActiveBurgerMenu] = useState<boolean>(false);
-
-  function handleClickActive() {
-    if (!isActiveBurgerMenu) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
-    setIsActiveBurgerMenu((prevState) => !prevState);
-  }
+  const { handleClickActive, isActiveBurgerMenu } = useIsActiveMenu();
 
   useEffect(() => {
     const handleScroll = () => {

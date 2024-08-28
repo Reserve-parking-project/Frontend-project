@@ -1,17 +1,19 @@
-import { useRef, useState } from 'react';
+import { ChangeEvent, useRef, useState } from 'react';
 import { Icon } from 'src/shared/ui';
 
 import s from './actionsPanel.module.scss';
 
 export default function TimePicker() {
-  const inputTime = useRef(null);
-  const [userTime, setUserTime] = useState('00:00');
+  const inputTime = useRef<HTMLInputElement>(null);
+  const [userTime, setUserTime] = useState<string>('00:00');
 
   function handlePickedTime() {
-    inputTime.current.showPicker();
+    if (inputTime.current) {
+      inputTime.current.showPicker();
+    }
   }
 
-  function handleChangeTime(event) {
+  function handleChangeTime(event: ChangeEvent<HTMLInputElement>) {
     setUserTime(event.target.value);
   }
 
@@ -19,7 +21,7 @@ export default function TimePicker() {
     <>
       <div className={s.actionsPanel__time}>
         <button type="button" onClick={handlePickedTime}>
-          <Icon name="time" />
+          <Icon name="time" className={s.actionsPanel__icon} />
         </button>
 
         <input onChange={handleChangeTime} type="time" ref={inputTime} />

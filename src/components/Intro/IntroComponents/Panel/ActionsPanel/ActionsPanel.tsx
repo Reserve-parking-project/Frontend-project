@@ -1,9 +1,10 @@
-import DatePicker from "./DatePicker";
-import TimePicker from "./TimePicker";
+import { FC } from 'react';
+import DatePicker from './DatePicker';
+import TimePicker from './TimePicker';
 
-import s from "./actionsPanel.module.scss";
+import s from './actionsPanel.module.scss';
 
-export default function ActionsPanel({ title }) {
+const ActionsPanel: FC<{ title: string }> = ({ title }) => {
   return (
     <div className={s.actionsPanel}>
       <h6>{title}</h6>
@@ -19,4 +20,6 @@ export default function ActionsPanel({ title }) {
       </div>
     </div>
   );
-}
+};
+
+export default ActionsPanel;

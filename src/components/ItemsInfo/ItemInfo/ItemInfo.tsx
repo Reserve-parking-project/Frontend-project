@@ -1,8 +1,12 @@
+import { FC } from 'react';
+
 import { Icon } from 'src/shared/ui';
 
 import s from './itemInfo.module.scss';
 
-export default function ItemInfo(objectValues) {
+import type { ItemInfoProps } from './types';
+
+const ItemInfo: FC<ItemInfoProps> = (objectValues) => {
   const { pictureText, pictureUrl, infoIcon, infoText } = objectValues;
 
   return (
@@ -18,4 +22,6 @@ export default function ItemInfo(objectValues) {
       </div>
     </div>
   );
-}
+};
+
+export default ItemInfo;

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import PanelInput from './PanelInput.jsx';
-import ActionsPanel from './ActionsPanel/ActionsPanel.jsx';
+import PanelInput from './PanelInput.js';
+import ActionsPanel from './ActionsPanel/ActionsPanel.js';
 import { Button, Icon } from 'src/shared/ui';
 
 import s from './panel.module.scss';

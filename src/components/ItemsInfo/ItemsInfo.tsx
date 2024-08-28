@@ -3,7 +3,7 @@ import { itemsInfo } from 'src/shared/constants';
 
 import s from './itemsInfo.module.scss';
 
-export default function ItemsInfo() {
+const ItemsInfo = () => {
   return (
     <>
       <div className={s.items}>
@@ -25,4 +25,6 @@ export default function ItemsInfo() {
       </div>
     </>
   );
-}
+};
+
+export default ItemsInfo;
