@@ -1,16 +1,20 @@
-import { useRef, useState } from 'react';
+import { ChangeEvent, FC, useRef, useState } from 'react';
 import { format, parseISO } from 'date-fns';
 
 import { Icon, SearchInput } from 'src/shared/ui';
 
 import s from './searchInputData.module.scss';
 
-export default function Input({ type, nameIcon, initState }) {
-  const userData = useRef(null);
+const Input: FC<{ type: string; nameIcon: string; initState: string }> = ({
+  type,
+  nameIcon,
+  initState,
+}) => {
+  const userData = useRef<HTMLInputElement>(null);
 
   const [date, setDate] = useState(initState);
 
-  function handleInputChange(event) {
+  function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
     if (type === 'date') {
       const data = event.target.value;
 
@@ -22,7 +26,9 @@ export default function Input({ type, nameIcon, initState }) {
   }
 
   function handleClickDate() {
-    userData.current.showPicker();
+    if (userData.current) {
+      userData.current.showPicker();
+    }
   }
 
   return (
@@ -35,4 +41,6 @@ export default function Input({ type, nameIcon, initState }) {
       </button>
     </div>
   );
-}
+};
+
+export default Input;

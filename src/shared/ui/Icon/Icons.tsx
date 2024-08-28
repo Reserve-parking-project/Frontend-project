@@ -1,5 +1,5 @@
-import Icon from "./Icon";
-import s from "./icon.module.scss";
+import Icon from './Icon';
+import s from './icon.module.scss';
 
 export default function Icons() {
   <div className={s.storybook}>

@@ -1,9 +1,9 @@
-import Icon from "./Icon";
+import Icon from './Icon';
 
-import s from "./icon.module.scss";
+import s from './icon.module.scss';
 
 export default {
-  title: "Components/UI/Icon",
+  title: 'Components/UI/Icon',
   component: Icon,
 };
 
