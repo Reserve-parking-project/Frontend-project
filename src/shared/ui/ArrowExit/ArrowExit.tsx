@@ -7,7 +7,7 @@ const ArrowExit = ({ ...props }) => {
   return (
     <button type="button" {...props}>
       <Link to="/" className={s.arrow}>
-        <Icon name="arrow" />
+        <Icon name="arrow" className={s.svg} />
       </Link>
     </button>
   );
